@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Catalog - Tengmai Luxury Stone Furniture</title>
+<meta name="description" content="Browse Tengmai luxury stone series: White, Black, Green, Blue, Yellow, Red, Gray. Factory direct natural stone slabs, tables, feature walls from Foshan China.">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,"PingFang SC",Helvetica,Arial,sans-serif; background:#f5f5f0; color:#222; }
+.nav { background:#1a1a2e; padding:14px 20px; position:sticky; top:0; z-index:100; }
+.nav-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+.nav a { color:#fff; text-decoration:none; font-size:14px; margin-left:20px; }
+.nav .logo { font-weight:800; font-size:18px; color:#e2a83c; }
+.header { text-align:center; padding:50px 20px 30px; }
+.header h1 { font-size:32px; margin-bottom:10px; }
+.header p { color:#777; }
+.series { max-width:1100px; margin:0 auto; padding:20px; }
+.series h2 { font-size:24px; margin:30px 0 15px; color:#1a1a2e; border-left:4px solid #e2a83c; padding-left:12px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px; }
+.item { background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,.08); cursor:pointer; transition:.2s; }
+.item:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,.12); }
+.item img { width:100%; height:150px; object-fit:cover; display:block; }
+.item .n { padding:8px 10px; font-size:13px; color:#444; }
+.footer { text-align:center; padding:30px; color:#999; font-size:13px; }
+/* 灯箱 */
+#lb { display:none; position:fixed; top:0;left:0;right:0;bottom:0; background:rgba(0,0,0,.93); z-index:999; align-items:center; justify-content:center; flex-direction:column; }
+#lb img { max-width:88vw; max-height:80vh; border-radius:8px; }
+#lb .close { position:absolute; top:20px; right:30px; color:#fff; font-size:40px; cursor:pointer; background:none; border:none; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="logo">TENGMAI STONE</span>
+    <div><a href="index.html">Home</a><a href="#">Catalog</a><a href="index.html#contact">Contact</a></div>
+  </div>
+</nav>
+
+<div class="header">
+  <h1>Luxury Stone Catalog</h1>
+  <p>8 series · 40+ natural stone selections · Factory direct</p>
+</div>
+
+<div class="series"><h2>White Series <small style="color:#999">/ 白色系</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/white_0.jpg" alt="Fine Flower White"><div class="n">Fine Flower White</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/white_1.jpg" alt="Middle Flower White"><div class="n">Middle Flower White</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/white_2.jpg" alt="Big Flower White"><div class="n">Big Flower White</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/white_3.jpg" alt="Jazz White"><div class="n">Jazz White</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/white_4.jpg" alt="Elegant White"><div class="n">Elegant White</div></div>
+</div></div>
+<div class="series"><h2>Black Series <small style="color:#999">/ 黑色系</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/black_0.jpg" alt="Laurent Black"><div class="n">Laurent Black</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/black_1.jpg" alt="Black White Root"><div class="n">Black White Root</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/black_2.jpg" alt="Ancient Wood Grain"><div class="n">Ancient Wood Grain</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/black_3.jpg" alt="Black Rose"><div class="n">Black Rose</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/black_4.jpg" alt="Silver White Dragon"><div class="n">Silver White Dragon</div></div>
+</div></div>
+<div class="series"><h2>Chinese Style <small style="color:#999">/ 中式系列</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/chinese_0.jpg" alt="Fragrant Snow Plum"><div class="n">Fragrant Snow Plum</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/chinese_1.jpg" alt="Cold River Snow"><div class="n">Cold River Snow</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/chinese_2.jpg" alt="Snow Mountain Orchid"><div class="n">Snow Mountain Orchid</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/chinese_3.jpg" alt="Snow Mountain Flying Fox"><div class="n">Snow Mountain Flying Fox</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/chinese_4.jpg" alt="Tianshan Twilight Snow"><div class="n">Tianshan Twilight Snow</div></div>
+</div></div>
+<div class="series"><h2>Green Series <small style="color:#999">/ 绿色系</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/green_0.jpg" alt="Purple Mountain Water"><div class="n">Purple Mountain Water</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/green_1.jpg" alt="Romanesque"><div class="n">Romanesque</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/green_2.jpg" alt="Peacock Screen"><div class="n">Peacock Screen</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/green_3.jpg" alt="Golden Peacock"><div class="n">Golden Peacock</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/green_4.jpg" alt="Golden Branch Jade Leaf"><div class="n">Golden Branch Jade Leaf</div></div>
+</div></div>
+<div class="series"><h2>Blue Series <small style="color:#999">/ 蓝色系</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/blue_0.jpg" alt="Dantong Green"><div class="n">Dantong Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/blue_1.jpg" alt="Royal Green"><div class="n">Royal Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/blue_2.jpg" alt="Elegant Green"><div class="n">Elegant Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/blue_3.jpg" alt="Olive Green"><div class="n">Olive Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/blue_4.jpg" alt="Cloud Jade Green"><div class="n">Cloud Jade Green</div></div>
+</div></div>
+<div class="series"><h2>Yellow Series <small style="color:#999">/ 黄色系</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/yellow_0.jpg" alt="Glacier Green"><div class="n">Glacier Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/yellow_1.jpg" alt="Nano Autumn Green"><div class="n">Nano Autumn Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/yellow_2.jpg" alt="Italian Green"><div class="n">Italian Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/yellow_3.jpg" alt="Indian Green"><div class="n">Indian Green</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/yellow_4.jpg" alt="Ireland Green"><div class="n">Ireland Green</div></div>
+</div></div>
+<div class="series"><h2>Red Series <small style="color:#999">/ 红色系</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/red_0.jpg" alt="Blue Crystal"><div class="n">Blue Crystal</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/red_1.jpg" alt="Blue Gold Sand"><div class="n">Blue Gold Sand</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/red_2.jpg" alt="Blue Jade Onyx"><div class="n">Blue Jade Onyx</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/red_3.jpg" alt="Dream Blue Gem"><div class="n">Dream Blue Gem</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/red_4.jpg" alt="Fendi Blue"><div class="n">Fendi Blue</div></div>
+</div></div>
+<div class="series"><h2>Gray Series <small style="color:#999">/ 灰色系</small></h2><div class="grid">
+<div class="item" onclick="openImg(this)"><img src="images/products/gray_0.jpg" alt="Blue Diamond Pandora"><div class="n">Blue Diamond Pandora</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/gray_1.jpg" alt="Green Diamond Pandora"><div class="n">Green Diamond Pandora</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/gray_2.jpg" alt="Italian Venice Brown"><div class="n">Italian Venice Brown</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/gray_3.jpg" alt="Turkey Venice Brown"><div class="n">Turkey Venice Brown</div></div>
+<div class="item" onclick="openImg(this)"><img src="images/products/gray_4.jpg" alt="Calacatta Gold"><div class="n">Calacatta Gold</div></div>
+</div></div>
+
+<div id="lb" onclick="this.style.display='none'"><button class="close">×</button><img id="lbImg" src=""></div>
+
+<script>
+function openImg(el) {
+  var img = el.querySelector('img');
+  document.getElementById('lbImg').src = img.src;
+  document.getElementById('lb').style.display = 'flex';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('lb').style.display = 'none';
+});
+</script>
+
+<div class="footer">© 2026 Tengmai Luxury Stone Furniture · Foshan, China · <a href="https://wangbarrte-code.github.io/tengmai/">wangbarrte-code.github.io/tengmai</a></div>
+</body>
+</html>
