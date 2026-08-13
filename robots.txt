@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wangbarrte-code.github.io/tengmai/sitemap.xml
