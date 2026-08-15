@@ -157,7 +157,7 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
   <div class="hero-content">
     <span class="hero-kicker" data-i18n="hero_kicker">Foshan Factory Direct</span>
     <h1 data-i18n="hero_h1">Nature's Artwork,<br><span data-i18n="hero_h1_2">Crafted in Stone</span></h1>
-    <p data-i18n="hero_p">Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece is one of a kind — factory direct, save 30-50%.</p>
+    <p data-i18n="hero_p">Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece is one of a kind — factory direct, save 30-50%. Prices start from $1,280.</p>
     <div class="hero-btns">
       <a href="#products" class="btn btn-gold" data-i18n="hero_btn1">Explore Collection</a>
       <a href="https://wa.me/601124300699" class="btn btn-ghost"><i class="fab fa-whatsapp"></i> <span data-i18n="hero_btn2">Get Price</span></a>
@@ -254,7 +254,7 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
   <p data-i18n="cta_p">Tell us what you need — dining tables, slabs, feature walls, custom pieces. We reply within 24 hours.</p>
   <form class="quote-form" onsubmit="submitQuote(event)">
     <input type="text" id="qName" placeholder="Your Name *" required>
-    <input type="text" id="qCountry" placeholder="Country / City">
+    <input type="text" id="qCountry" placeholder="Country / City (optional)">
     <select id="qType">
       <option value="Dining Table" data-i18n="opt1">Dining Table</option>
       <option value="Coffee Table" data-i18n="opt2">Coffee Table</option>
@@ -263,7 +263,7 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
     </select>
     <input type="text" id="qContact" placeholder="WhatsApp / Email *" required>
     <textarea id="qMsg" placeholder="Tell us your project..."></textarea>
-    <button type="submit" class="btn btn-gold"><i class="fab fa-whatsapp"></i> <span data-i18n="cta_submit">Send via WhatsApp</span></button>
+    <button type="submit" class="btn btn-gold"><i class="fab fa-whatsapp"></i> <span data-i18n="cta_submit">Get My Quote in 24h</span></button>
   </form>
 </section>
 
@@ -287,7 +287,7 @@ function submitQuote(e){
   var n=document.getElementById('qName').value, c=document.getElementById('qCountry').value,
       t=document.getElementById('qType').value, ct=document.getElementById('qContact').value,
       m=document.getElementById('qMsg').value;
-  var msg='Hi TENGMAI! I want a quote.%0A%0AName: '+encodeURIComponent(n)+
+  var msg='Hi TENGMAI! I\'m interested in your luxury stone furniture.%0A%0AName: '+encodeURIComponent(n)+
           '%0ACountry: '+encodeURIComponent(c)+
           '%0AProduct: '+encodeURIComponent(t)+
           '%0AContact: '+encodeURIComponent(ct)+
@@ -300,7 +300,7 @@ var I18N = {
   en: {
     nav_products:"Products", nav_factory:"Factory", nav_why:"Why Us", nav_contact:"Contact", nav_wa:"WhatsApp",
     hero_kicker:"Foshan Factory Direct", hero_h1:"Nature's Artwork,", hero_h1_2:"Crafted in Stone",
-    hero_p:"Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece is one of a kind — factory direct, save 30-50%.",
+    hero_p:"Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece is one of a kind — factory direct, save 30-50%. Prices start from $1,280.",
     hero_btn1:"Explore Collection", hero_btn2:"Get Price",
     stat1:"Years Factory", stat2:"Craft Steps", stat3:"Savings", stat4:"Stone Colors",
     cat_tag:"Our Collection", cat_h2:"Luxury Stone Furniture", cat_sub:"Explore our ranges — each piece crafted from a single natural stone slab",
@@ -314,7 +314,7 @@ var I18N = {
     fac_tag:"Our Factory", fac_h2:"Inside TENGMAI", fac_sub:"Real factory, real craftsmanship — Foshan, Guangdong, China",
     fac_1:"Stone workshop & fabrication", fac_2:"Natural stone slab yard", fac_3:"Precision polishing & finishing",
     cta_tag:"Get a Quote", cta_h2:"Let's Talk Stone", cta_p:"Tell us what you need — dining tables, slabs, feature walls, custom pieces. We reply within 24 hours.",
-    opt1:"Dining Table", opt2:"Coffee Table", opt3:"Slab / Feature Wall", opt4:"Custom Piece", cta_submit:"Send via WhatsApp"
+    opt1:"Dining Table", opt2:"Coffee Table", opt3:"Slab / Feature Wall", opt4:"Custom Piece", cta_submit:"Get My Quote in 24h"
   },
   zh: {
     nav_products:"产品", nav_factory:"工厂", nav_why:"为什么选我们", nav_contact:"联系", nav_wa:"WhatsApp",
@@ -333,7 +333,7 @@ var I18N = {
     fac_tag:"我们的工厂", fac_h2:"走进腾脉", fac_sub:"真实工厂，真实工艺——中国广东佛山",
     fac_1:"石材加工车间", fac_2:"天然石材大板堆场", fac_3:"精密抛光与收尾",
     cta_tag:"获取报价", cta_h2:"聊聊石材", cta_p:"告诉我们您需要什么——餐桌、大板、背景墙、定制。24小时内回复。",
-    opt1:"餐桌", opt2:"茶几", opt3:"大板/背景墙", opt4:"定制", cta_submit:"通过WhatsApp发送"
+    opt1:"餐桌", opt2:"茶几", opt3:"大板/背景墙", opt4:"定制", cta_submit:"24小时内获取报价"
   },
   ar: {
     nav_products:"المنتجات", nav_factory:"المصنع", nav_why:"لماذا نحن", nav_contact:"اتصل", nav_wa:"واتساب",
