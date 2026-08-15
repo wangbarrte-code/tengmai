@@ -56,6 +56,8 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
   .nav-links.open{display:flex;}
   .header h1{font-size:28px;}
 }
+
+.pandora-note{font-size:11px;color:#c9a227;margin-top:4px;font-weight:500;}
 </style>
 </head>
 <body>
@@ -106,7 +108,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
 <div id="lb" onclick="this.style.display='none'"><button class="close">×</button><img id="lbImg" src=""></div>
 
 <script>
-/* ===== Products data (6 series × 5 = 30) ===== */
+/* ===== Products data (7 series × 5 = 35) ===== */
 var PRODUCTS = [
   // White
   {c:"white", img:"images/products/white_0.jpg", en:"Fine Flower White", zh:"细花白", ar:"زهرة بيضاء ناعمة"},
@@ -154,9 +156,9 @@ var PRODUCTS = [
 
 var lang = localStorage.getItem('tengmai_lang') || 'en';
 var I18N = {
-  en:{nav_home:"Home",nav_dining:"Dining",nav_coffee:"Coffee",nav_wall:"Walls",nav_island:"Islands",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"6 series · 30 natural stone selections · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_yellow:"Yellow",tab_pandora:"Pandora",ask:"Ask Price"},
-  zh:{nav_home:"首页",nav_dining:"餐桌",nav_coffee:"茶几",nav_wall:"背景墙",nav_island:"岛台",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"6大系列 · 30款天然石材 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_yellow:"黄色系",tab_pandora:"潘多拉系",ask:"询价"},
-  ar:{nav_home:"الرئيسية",nav_dining:"طاولات",nav_coffee:"قهوة",nav_wall:"جدران",nav_island:"جزر",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"6 مجموعات · 30 حجراً طبيعياً · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_yellow:"أصفر",tab_pandora:"باندورا",ask:"اسأل عن السعر"}
+  en:{nav_home:"Home",nav_dining:"Dining",nav_coffee:"Coffee",nav_wall:"Walls",nav_island:"Islands",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"7 series · 35 natural stone selections · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_yellow:"Yellow",tab_pandora:"Pandora",ask:"Ask Price",pandora_note:"Sample image - request real photos via WhatsApp"},
+  zh:{nav_home:"首页",nav_dining:"餐桌",nav_coffee:"茶几",nav_wall:"背景墙",nav_island:"岛台",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"7大系列 · 35款天然石材 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_yellow:"黄色系",tab_pandora:"潘多拉系",ask:"询价",pandora_note:"示例图，真实实拍请WhatsApp索取"},
+  ar:{nav_home:"الرئيسية",nav_dining:"طاولات",nav_coffee:"قهوة",nav_wall:"جدران",nav_island:"جزر",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"7 مجموعات · 35 حجراً طبيعياً · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_yellow:"أصفر",tab_pandora:"باندورا",ask:"اسأل عن السعر",pandora_note:"صورة نموذجية - اطلب الصور الحقيقية عبر واتساب"}
 };
 
 function render(filter){
@@ -166,9 +168,10 @@ function render(filter){
   list.innerHTML = data.map(function(p){
     var name = p[lang] || p.en;
     var waText = encodeURIComponent('Hi TENGMAI! I want price for '+p.en);
+    var note = (p.c==='pandora' && t.pandora_note) ? '<div class="pandora-note">'+t.pandora_note+'</div>' : '';
     return '<div class="p-item" onclick="openImg(\''+p.img+'\')">'+
       '<img src="'+p.img+'" alt="'+p.en+'" loading="lazy">'+
-      '<div class="body"><h3>'+name+'</h3><div class="en">'+p.en+'</div>'+
+      '<div class="body"><h3>'+name+'</h3><div class="en">'+p.en+'</div>'+note+
       '<div class="actions"><a href="https://wa.me/601124300699?text='+waText+'" class="wa" onclick="event.stopPropagation()"><i class="fab fa-whatsapp"></i> '+t.ask+'</a></div></div></div>';
   }).join('');
 }
