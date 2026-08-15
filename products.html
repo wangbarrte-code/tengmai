@@ -3,88 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Catalog - Tengmai Luxury Stone Furniture</title>
-<meta name="description" content="Browse Tengmai luxury stone series: White, Black, Chinese, Green, Blue, Yellow. Factory direct natural stone slabs from Foshan China.">
+<title>Product Catalog - TENGMAI Luxury Stone Furniture</title>
+<meta name="description" content="Browse TENGMAI luxury stone catalog: Dining tables, coffee tables, feature walls, islands. White, black, green, blue, Pandora series. Factory direct from Foshan, China.">
+<meta name="keywords" content="luxury stone, marble catalog, stone table, natural stone, Foshan factory, Pandora stone, marble dining table">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:-apple-system,"PingFang SC",Helvetica,Arial,sans-serif; background:#f7f7f4; color:#222; }
-.nav { background:#1a1a2e; padding:14px 20px; position:sticky; top:0; z-index:100; }
-.nav-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
-.nav a { color:#fff; text-decoration:none; font-size:14px; margin-left:20px; }
-.nav .logo { font-weight:800; font-size:18px; color:#e2a83c; }
-.header { text-align:center; padding:50px 20px 20px; }
-.header h1 { font-size:32px; margin-bottom:10px; }
-.header p { color:#777; }
-.series { max-width:1100px; margin:0 auto; padding:20px; }
-.series h2 { font-size:22px; margin:28px 0 14px; color:#1a1a2e; border-left:4px solid #e2a83c; padding-left:12px; }
-.series h2 small { color:#999; font-weight:400; }
-.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:14px; }
-.item { background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,.08); cursor:pointer; transition:.2s; }
-.item:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,.12); }
-.item img { width:100%; height:135px; object-fit:cover; display:block; background:#eee; }
-.item .n { padding:8px 10px; font-size:13px; color:#444; }
-.footer { text-align:center; padding:30px; color:#999; font-size:13px; }
-#lb { display:none; position:fixed; top:0;left:0;right:0;bottom:0; background:rgba(0,0,0,.93); z-index:999; align-items:center; justify-content:center; }
-#lb img { max-width:90vw; max-height:82vh; border-radius:8px; }
-#lb .close { position:absolute; top:15px; right:25px; color:#fff; font-size:40px; cursor:pointer; background:none; border:none; }
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--gold:#c8892a;--gold-light:#e2a83c;--dark:#0f0f1a;--dark2:#1a1a2e;--cream:#f7f5f0;}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;background:var(--cream);color:#222;}
+.nav{position:sticky;top:0;z-index:100;background:rgba(15,15,26,.95);backdrop-filter:blur(10px);}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;}
+.logo{color:#fff;font-weight:800;font-size:20px;text-decoration:none;}
+.logo span{color:var(--gold-light);}
+.nav-links{display:flex;align-items:center;gap:20px;}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:13px;}
+.nav-links a:hover{color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;}
+.lang-switch button{background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff;padding:3px 9px;border-radius:6px;font-size:11px;cursor:pointer;}
+.lang-switch button.active{background:var(--gold);border-color:var(--gold);}
+.wa-nav{background:#25d366;color:#fff;padding:8px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;}
+.hamburger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;}
+
+.header{text-align:center;padding:60px 20px 30px;}
+.header h1{font-size:36px;margin-bottom:8px;}
+.header p{color:#777;font-size:14px;}
+.cat-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:20px 0 40px;}
+.cat-tab{padding:10px 22px;border-radius:24px;border:2px solid #ddd;background:#fff;font-size:14px;cursor:pointer;transition:.2s;color:#555;}
+.cat-tab:hover{border-color:var(--gold);color:var(--gold);}
+.cat-tab.active{background:var(--dark2);border-color:var(--dark2);color:#fff;}
+
+.products{max-width:1200px;margin:0 auto;padding:0 24px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;}
+.p-item{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.07);transition:.3s;cursor:pointer;}
+.p-item:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,.13);}
+.p-item img{width:100%;height:170px;object-fit:cover;background:#eee;}
+.p-item .body{padding:14px;}
+.p-item h3{font-size:15px;margin-bottom:4px;}
+.p-item .en{font-size:11px;color:#999;}
+.p-item .actions{display:flex;gap:8px;margin-top:10px;}
+.p-item .wa{flex:1;background:#25d366;color:#fff;text-decoration:none;text-align:center;padding:8px;border-radius:18px;font-size:11px;font-weight:700;}
+.p-item .wa:hover{opacity:.9;}
+
+.footer{text-align:center;padding:30px;color:#999;font-size:12px;background:var(--dark);color:rgba(255,255,255,.7);}
+.footer a{color:var(--gold-light);text-decoration:none;}
+
+#lb{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);z-index:999;align-items:center;justify-content:center;}
+#lb img{max-width:90vw;max-height:80vh;border-radius:10px;}
+#lb .close{position:absolute;top:15px;right:25px;color:#fff;font-size:38px;cursor:pointer;background:none;border:none;}
+
+@media(max-width:768px){
+  .hamburger{display:block;}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(15,15,26,.98);flex-direction:column;padding:18px 24px;align-items:flex-start;}
+  .nav-links.open{display:flex;}
+  .header h1{font-size:28px;}
+}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="nav-inner"><span class="logo">TENGMAI STONE</span><div><a href="index.html">Home</a><a href="#">Catalog</a><a href="index.html#contact">Contact</a></div></div></nav>
-<div class="header"><h1>Luxury Stone Catalog</h1><p>6 series · 30 natural stone selections · Factory direct</p></div>
-<div class="series"><h2>White Series <small>/ 白色系</small></h2><div class="grid">
-<div class="item" onclick="openImg(this)"><img src="images/products/white_0.jpg" alt="Fine Flower White" loading="lazy"><div class="n">Fine Flower White</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/white_1.jpg" alt="Middle Flower White" loading="lazy"><div class="n">Middle Flower White</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/white_2.jpg" alt="Big Flower White" loading="lazy"><div class="n">Big Flower White</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/white_3.jpg" alt="Jazz White" loading="lazy"><div class="n">Jazz White</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/white_4.jpg" alt="Elegant White" loading="lazy"><div class="n">Elegant White</div></div>
-</div></div>
-<div class="series"><h2>Black Series <small>/ 黑色系</small></h2><div class="grid">
-<div class="item" onclick="openImg(this)"><img src="images/products/black_0.jpg" alt="Laurent Black" loading="lazy"><div class="n">Laurent Black</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/black_1.jpg" alt="Black White Root" loading="lazy"><div class="n">Black White Root</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/black_2.jpg" alt="Ancient Wood Grain" loading="lazy"><div class="n">Ancient Wood Grain</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/black_3.jpg" alt="Black Rose" loading="lazy"><div class="n">Black Rose</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/black_4.jpg" alt="Silver White Dragon" loading="lazy"><div class="n">Silver White Dragon</div></div>
-</div></div>
-<div class="series"><h2>Chinese Series <small>/ 中式系列</small></h2><div class="grid">
-<div class="item" onclick="openImg(this)"><img src="images/products/chinese_0.jpg" alt="Fragrant Snow Plum" loading="lazy"><div class="n">Fragrant Snow Plum</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/chinese_1.jpg" alt="Cold River Snow" loading="lazy"><div class="n">Cold River Snow</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/chinese_2.jpg" alt="Snow Mountain Orchid" loading="lazy"><div class="n">Snow Mountain Orchid</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/chinese_3.jpg" alt="Snow Mountain Flying Fox" loading="lazy"><div class="n">Snow Mountain Flying Fox</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/chinese_4.jpg" alt="Tianshan Twilight Snow" loading="lazy"><div class="n">Tianshan Twilight Snow</div></div>
-</div></div>
-<div class="series"><h2>Green Series <small>/ 绿色系</small></h2><div class="grid">
-<div class="item" onclick="openImg(this)"><img src="images/products/green_0.jpg" alt="Amazon Green" loading="lazy"><div class="n">Amazon Green</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/green_1.jpg" alt="Cold Jade" loading="lazy"><div class="n">Cold Jade</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/green_2.jpg" alt="Ancestral Green" loading="lazy"><div class="n">Ancestral Green</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/green_3.jpg" alt="Patek Jade Green" loading="lazy"><div class="n">Patek Jade Green</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/green_4.jpg" alt="Prada Green" loading="lazy"><div class="n">Prada Green</div></div>
-</div></div>
-<div class="series"><h2>Blue Series <small>/ 蓝色系</small></h2><div class="grid">
-<div class="item" onclick="openImg(this)"><img src="images/products/blue_0.jpg" alt="Blue Jade" loading="lazy"><div class="n">Blue Jade</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/blue_1.jpg" alt="Blue Crystal" loading="lazy"><div class="n">Blue Crystal</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/blue_2.jpg" alt="Blue Gold Sand" loading="lazy"><div class="n">Blue Gold Sand</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/blue_3.jpg" alt="Blue Jade Onyx" loading="lazy"><div class="n">Blue Jade Onyx</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/blue_4.jpg" alt="Dream Blue Gem" loading="lazy"><div class="n">Dream Blue Gem</div></div>
-</div></div>
-<div class="series"><h2>Yellow Series <small>/ 黄色系</small></h2><div class="grid">
-<div class="item" onclick="openImg(this)"><img src="images/products/yellow_0.jpg" alt="Old Mine Pandora" loading="lazy"><div class="n">Old Mine Pandora</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/yellow_1.jpg" alt="Large Crystal Pandora" loading="lazy"><div class="n">Large Crystal Pandora</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/yellow_2.jpg" alt="White Base Pandora" loading="lazy"><div class="n">White Base Pandora</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/yellow_3.jpg" alt="Blue Diamond Pandora" loading="lazy"><div class="n">Blue Diamond Pandora</div></div>
-<div class="item" onclick="openImg(this)"><img src="images/products/yellow_4.jpg" alt="Green Diamond Pandora" loading="lazy"><div class="n">Green Diamond Pandora</div></div>
-</div></div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">TENGMAI<span>®</span></a>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="#dining" data-i18n="nav_dining">Dining</a>
+      <a href="#coffee" data-i18n="nav_coffee">Coffee</a>
+      <a href="#feature" data-i18n="nav_wall">Walls</a>
+      <a href="#island" data-i18n="nav_island">Islands</a>
+      <div class="lang-switch">
+        <button onclick="setLang('en')" id="btn-en" class="active">EN</button>
+        <button onclick="setLang('zh')" id="btn-zh">中</button>
+        <button onclick="setLang('ar')" id="btn-ar">ع</button>
+      </div>
+      <a href="https://wa.me/601124300699" class="wa-nav"><i class="fab fa-whatsapp"></i> <span data-i18n="nav_wa">WhatsApp</span></a>
+    </div>
+  </div>
+</nav>
+
+<div class="header">
+  <h1 data-i18n="h1">Luxury Stone Catalog</h1>
+  <p data-i18n="sub">6 series · 30 natural stone selections · Factory direct</p>
+  <div class="cat-tabs">
+    <button class="cat-tab active" data-filter="all" data-i18n="tab_all">All</button>
+    <button class="cat-tab" data-filter="white" data-i18n="tab_white">White</button>
+    <button class="cat-tab" data-filter="black" data-i18n="tab_black">Black</button>
+    <button class="cat-tab" data-filter="chinese" data-i18n="tab_chinese">Chinese</button>
+    <button class="cat-tab" data-filter="green" data-i18n="tab_green">Green</button>
+    <button class="cat-tab" data-filter="blue" data-i18n="tab_blue">Blue</button>
+    <button class="cat-tab" data-filter="yellow" data-i18n="tab_yellow">Yellow</button>
+    <button class="cat-tab" data-filter="pandora" data-i18n="tab_pandora">Pandora</button>
+  </div>
+</div>
+
+<div class="products" id="products">
+<!-- products injected by JS -->
+</div>
+
+<footer class="footer">
+  <div><i class="fab fa-whatsapp" style="color:#25d366"></i> WhatsApp: @v_barret775 | <i class="fab fa-weixin" style="color:#07c160"></i> WeChat: Barret775</div>
+  <div style="margin-top:6px">TENGMAI · <a href="index.html" data-i18n="nav_home">Back to Home</a></div>
+</footer>
 
 <div id="lb" onclick="this.style.display='none'"><button class="close">×</button><img id="lbImg" src=""></div>
+
 <script>
-function openImg(el) {
-  document.getElementById('lbImg').src = el.querySelector('img').src;
-  document.getElementById('lb').style.display = 'flex';
+/* ===== Products data (6 series × 5 = 30) ===== */
+var PRODUCTS = [
+  // White
+  {c:"white", img:"images/products/white_0.jpg", en:"Fine Flower White", zh:"细花白", ar:"زهرة بيضاء ناعمة"},
+  {c:"white", img:"images/products/white_1.jpg", en:"Middle Flower White", zh:"中花白", ar:"زهرة بيضاء متوسطة"},
+  {c:"white", img:"images/products/white_2.jpg", en:"Big Flower White", zh:"大花白", ar:"زهرة بيضاء كبيرة"},
+  {c:"white", img:"images/products/white_3.jpg", en:"Jazz White", zh:"爵士白", ar:"أبيض جاز"},
+  {c:"white", img:"images/products/white_4.jpg", en:"Elegant White", zh:"雅士白", ar:"أبيض أنيق"},
+  // Black
+  {c:"black", img:"images/products/black_0.jpg", en:"Laurent Black", zh:"劳伦黑金", ar:"أسود لوران"},
+  {c:"black", img:"images/products/black_1.jpg", en:"Black White Root", zh:"黑白根", ar:"أسود بجذور بيضاء"},
+  {c:"black", img:"images/products/black_2.jpg", en:"Ancient Wood Grain", zh:"古木纹", ar:"خشب قديم"},
+  {c:"black", img:"images/products/black_3.jpg", en:"Black Rose", zh:"黑玫瑰", ar:"وردة سوداء"},
+  {c:"black", img:"images/products/black_4.jpg", en:"Silver White Dragon", zh:"银白龙", ar:"تنين أبيض فضي"},
+  // Chinese
+  {c:"chinese", img:"images/products/chinese_0.jpg", en:"Fragrant Snow Plum", zh:"香雪梅", ar:"برقوق الثلج"},
+  {c:"chinese", img:"images/products/chinese_1.jpg", en:"Cold River Snow", zh:"寒江雪", ar:"ثلج النهر البارد"},
+  {c:"chinese", img:"images/products/chinese_2.jpg", en:"Snow Mountain Orchid", zh:"雪山兰", ar:"سحلبية الجبل"},
+  {c:"chinese", img:"images/products/chinese_3.jpg", en:"Snow Mountain Flying Fox", zh:"雪山飞狐", ar:"ثعلب الثلج الطائر"},
+  {c:"chinese", img:"images/products/chinese_4.jpg", en:"Tianshan Twilight Snow", zh:"天山暮雪", ar:"ثلج تيانشان"},
+  // Green
+  {c:"green", img:"images/products/green_0.jpg", en:"Amazon Green", zh:"亚马逊绿", ar:"أمازون أخضر"},
+  {c:"green", img:"images/products/green_1.jpg", en:"Cold Jade", zh:"冷翡翠", ar:"يشم بارد"},
+  {c:"green", img:"images/products/green_2.jpg", en:"Ancestral Green", zh:"祖传绿", ar:"أخضر تراثي"},
+  {c:"green", img:"images/products/green_3.jpg", en:"Patek Jade Green", zh:"百达翡丽绿", ar:"باتيك جاد أخضر"},
+  {c:"green", img:"images/products/green_4.jpg", en:"Prada Green", zh:"普拉达绿", ar:"برادا أخضر"},
+  // Blue
+  {c:"blue", img:"images/products/blue_0.jpg", en:"Blue Jade", zh:"蓝翡翠", ar:"يشم أزرق"},
+  {c:"blue", img:"images/products/blue_1.jpg", en:"Blue Crystal", zh:"蓝水晶", ar:"كريستال أزرق"},
+  {c:"blue", img:"images/products/blue_2.jpg", en:"Blue Gold Sand", zh:"蓝金沙", ar:"رمال ذهبية زرقاء"},
+  {c:"blue", img:"images/products/blue_3.jpg", en:"Blue Jade Onyx", zh:"蓝玉髓", ar:"أونيكس أزرق"},
+  {c:"blue", img:"images/products/blue_4.jpg", en:"Dream Blue Gem", zh:"梦幻蓝宝", ar:"جوهرة زرقاء حلم"},
+  // Yellow
+  {c:"yellow", img:"images/products/yellow_0.jpg", en:"Golden Vein", zh:"金纹黄", ar:"عروق ذهبية"},
+  {c:"yellow", img:"images/products/yellow_1.jpg", en:"Sunset Yellow", zh:"日落黄", ar:"أصفر الغروب"},
+  {c:"yellow", img:"images/products/yellow_2.jpg", en:"Golden Sand", zh:"金沙黄", ar:"رمل ذهبي"},
+  {c:"yellow", img:"images/products/yellow_3.jpg", en:"Amber Glow", zh:"琥珀光", ar:"توهج كهرماني"},
+  {c:"yellow", img:"images/products/yellow_4.jpg", en:"Honey Stone", zh:"蜜糖石", ar:"حجر العسل"},
+  // Pandora
+  {c:"pandora", img:"images/products/yellow_0.jpg", en:"Old Mine Pandora", zh:"老矿潘多拉", ar:"باندورا القديمة"},
+  {c:"pandora", img:"images/products/yellow_1.jpg", en:"Large Crystal Pandora", zh:"大水晶潘多拉", ar:"باندورا الكريستالية"},
+  {c:"pandora", img:"images/products/yellow_2.jpg", en:"White Base Pandora", zh:"白底潘多拉", ar:"باندورا بيضاء"},
+  {c:"pandora", img:"images/products/yellow_3.jpg", en:"Blue Diamond Pandora", zh:"蓝钻潘多拉", ar:"باندورا الماس الأزرق"},
+  {c:"pandora", img:"images/products/yellow_4.jpg", en:"Green Diamond Pandora", zh:"绿钻潘多拉", ar:"باندورا الماس الأخضر"}
+];
+
+var lang = localStorage.getItem('tengmai_lang') || 'en';
+var I18N = {
+  en:{nav_home:"Home",nav_dining:"Dining",nav_coffee:"Coffee",nav_wall:"Walls",nav_island:"Islands",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"6 series · 30 natural stone selections · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_yellow:"Yellow",tab_pandora:"Pandora",ask:"Ask Price"},
+  zh:{nav_home:"首页",nav_dining:"餐桌",nav_coffee:"茶几",nav_wall:"背景墙",nav_island:"岛台",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"6大系列 · 30款天然石材 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_yellow:"黄色系",tab_pandora:"潘多拉系",ask:"询价"},
+  ar:{nav_home:"الرئيسية",nav_dining:"طاولات",nav_coffee:"قهوة",nav_wall:"جدران",nav_island:"جزر",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"6 مجموعات · 30 حجراً طبيعياً · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_yellow:"أصفر",tab_pandora:"باندورا",ask:"اسأل عن السعر"}
+};
+
+function render(filter){
+  var list = document.getElementById('products');
+  var data = filter && filter!=='all' ? PRODUCTS.filter(function(p){return p.c===filter;}) : PRODUCTS;
+  var t = I18N[lang];
+  list.innerHTML = data.map(function(p){
+    var name = p[lang] || p.en;
+    var waText = encodeURIComponent('Hi TENGMAI! I want price for '+p.en);
+    return '<div class="p-item" onclick="openImg(\''+p.img+'\')">'+
+      '<img src="'+p.img+'" alt="'+p.en+'" loading="lazy">'+
+      '<div class="body"><h3>'+name+'</h3><div class="en">'+p.en+'</div>'+
+      '<div class="actions"><a href="https://wa.me/601124300699?text='+waText+'" class="wa" onclick="event.stopPropagation()"><i class="fab fa-whatsapp"></i> '+t.ask+'</a></div></div></div>';
+  }).join('');
 }
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') document.getElementById('lb').style.display = 'none';
+function openImg(src){ document.getElementById('lbImg').src=src; document.getElementById('lb').style.display='flex'; }
+function toggleMenu(){ document.getElementById('navLinks').classList.toggle('open'); }
+function setLang(l){ lang=l; localStorage.setItem('tengmai_lang',l); applyLang(); render(document.querySelector('.cat-tab.active').dataset.filter); }
+function applyLang(){
+  var t=I18N[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el){ var k=el.getAttribute('data-i18n'); if(t[k]) el.textContent=t[k]; });
+  document.documentElement.lang=lang;
+  if(lang==='ar'){document.body.style.direction='rtl';}else{document.body.style.direction='ltr';}
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  document.getElementById('btn-zh').classList.toggle('active',lang==='zh');
+  document.getElementById('btn-ar').classList.toggle('active',lang==='ar');
+}
+document.querySelectorAll('.cat-tab').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.cat-tab').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');
+    render(btn.dataset.filter);
+  });
 });
+applyLang();
+render('all');
 </script>
-<div class="footer">© 2026 Tengmai Luxury Stone Furniture · Foshan, China</div>
 </body>
 </html>
