@@ -69,13 +69,13 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
 .wa-btn:hover { opacity:.9; }
 .hamburger { display:none; background:none; border:none; color:#fff; font-size:24px; cursor:pointer; }
 
-/* ===== HERO (split: left text, right clickable image) ===== */
-.hero { position:relative; min-height:100vh; display:flex; align-items:center; color:#fff; overflow:hidden; background:var(--dark); padding:120px 6% 80px; }
-.hero-bg { position:absolute; inset:0; background-size:cover; background-position:center; animation:kenburns 18s ease-in-out infinite alternate; }
+/* ===== HERO (split: left text, right clickable image, no overlap) ===== */
+.hero { position:relative; min-height:100vh; display:flex; align-items:center; color:#fff; overflow:hidden; background:linear-gradient(135deg, #0f0f1a 0%, #17172b 55%, #1d1d33 100%); padding:120px 6% 80px; }
+.hero-bg { position:absolute; inset:0; background-size:cover; background-position:center; opacity:.12; animation:kenburns 18s ease-in-out infinite alternate; filter:blur(2px); }
 @keyframes kenburns { from { transform:scale(1); } to { transform:scale(1.12); } }
-.hero-overlay { position:absolute; inset:0; background:linear-gradient(100deg, rgba(15,15,26,.92) 0%, rgba(15,15,26,.72) 45%, rgba(15,15,26,.35) 100%); }
-.hero-wrap { position:relative; z-index:2; display:flex; align-items:center; gap:64px; max-width:1200px; margin:0 auto; width:100%; }
-.hero-content { flex:1 1 52%; max-width:600px; }
+.hero-overlay { position:absolute; inset:0; background:linear-gradient(100deg, rgba(15,15,26,.95) 0%, rgba(15,15,26,.85) 50%, rgba(15,15,26,.7) 100%); }
+.hero-wrap { position:relative; z-index:2; display:flex; align-items:center; gap:72px; max-width:1200px; margin:0 auto; width:100%; }
+.hero-content { flex:1 1 50%; max-width:580px; }
 .hero-kicker { display:inline-block; border:1px solid rgba(226,168,60,.5); color:var(--gold-light); padding:6px 18px; border-radius:20px; font-size:12px; letter-spacing:3px; margin-bottom:24px; text-transform:uppercase; }
 .hero h1 { font-size:52px; font-weight:800; line-height:1.15; margin-bottom:20px; }
 .hero h1 span { color:var(--gold-light); }
@@ -89,11 +89,11 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
 .hero-stats { display:flex; gap:40px; margin-top:48px; flex-wrap:wrap; }
 .hero-stats .num { font-size:36px; font-weight:800; color:var(--gold-light); }
 .hero-stats .lbl { font-size:12px; color:rgba(255,255,255,.65); letter-spacing:1px; margin-top:2px; }
-/* right clickable image card */
-.hero-image { flex:0 0 44%; max-width:520px; position:relative; border-radius:20px; overflow:hidden; box-shadow:0 24px 64px rgba(0,0,0,.5); border:1px solid rgba(226,168,60,.35); display:block; text-decoration:none; }
-.hero-image img { width:100%; height:520px; object-fit:cover; display:block; transition:transform .7s; }
+/* right clickable image card — clean, own column, no overlap */
+.hero-image { flex:0 0 42%; max-width:500px; position:relative; border-radius:20px; overflow:hidden; box-shadow:0 24px 64px rgba(0,0,0,.55); border:1px solid rgba(226,168,60,.35); display:block; text-decoration:none; background:#1a1a2e; }
+.hero-image img { width:100%; height:540px; object-fit:cover; display:block; transition:transform .7s; }
 .hero-image:hover img { transform:scale(1.05); }
-.hero-image .tag { position:absolute; bottom:18px; left:18px; background:rgba(15,15,26,.78); color:var(--gold-light); padding:9px 18px; border-radius:22px; font-size:13px; font-weight:700; border:1px solid rgba(226,168,60,.45); }
+.hero-image .tag { position:absolute; bottom:18px; left:18px; background:rgba(15,15,26,.85); color:var(--gold-light); padding:9px 18px; border-radius:22px; font-size:13px; font-weight:700; border:1px solid rgba(226,168,60,.45); }
 .hero-image .tag i { margin-left:6px; }
 .scroll-hint { position:absolute; bottom:24px; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.5); font-size:22px; animation:bounce 2s infinite; z-index:2; }
 @keyframes bounce { 0%,100%{transform:translate(-50%,0);} 50%{transform:translate(-50%,8px);} }
