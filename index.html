@@ -69,26 +69,32 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
 .wa-btn:hover { opacity:.9; }
 .hamburger { display:none; background:none; border:none; color:#fff; font-size:24px; cursor:pointer; }
 
-/* ===== HERO (immersive) ===== */
-.hero { position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; overflow:hidden; background:var(--dark); }
+/* ===== HERO (split: left text, right clickable image) ===== */
+.hero { position:relative; min-height:100vh; display:flex; align-items:center; color:#fff; overflow:hidden; background:var(--dark); padding:120px 6% 80px; }
 .hero-bg { position:absolute; inset:0; background-size:cover; background-position:center; animation:kenburns 18s ease-in-out infinite alternate; }
 @keyframes kenburns { from { transform:scale(1); } to { transform:scale(1.12); } }
-.hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,15,26,.55) 0%, rgba(15,15,26,.35) 50%, rgba(15,15,26,.75) 100%); }
-.hero-content { position:relative; z-index:2; max-width:900px; padding:0 24px; }
+.hero-overlay { position:absolute; inset:0; background:linear-gradient(100deg, rgba(15,15,26,.92) 0%, rgba(15,15,26,.72) 45%, rgba(15,15,26,.35) 100%); }
+.hero-wrap { position:relative; z-index:2; display:flex; align-items:center; gap:64px; max-width:1200px; margin:0 auto; width:100%; }
+.hero-content { flex:1 1 52%; max-width:600px; }
 .hero-kicker { display:inline-block; border:1px solid rgba(226,168,60,.5); color:var(--gold-light); padding:6px 18px; border-radius:20px; font-size:12px; letter-spacing:3px; margin-bottom:24px; text-transform:uppercase; }
-.hero h1 { font-size:56px; font-weight:800; line-height:1.15; margin-bottom:20px; }
+.hero h1 { font-size:52px; font-weight:800; line-height:1.15; margin-bottom:20px; }
 .hero h1 span { color:var(--gold-light); }
-.hero p { font-size:18px; color:rgba(255,255,255,.85); max-width:640px; margin:0 auto 32px; line-height:1.7; }
-.hero-btns { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+.hero p { font-size:17px; color:rgba(255,255,255,.85); max-width:520px; margin:0 0 32px; line-height:1.7; }
+.hero-btns { display:flex; gap:16px; flex-wrap:wrap; }
 .btn { padding:14px 32px; border-radius:30px; font-size:15px; font-weight:700; text-decoration:none; transition:.3s; display:inline-flex; align-items:center; gap:8px; }
 .btn-gold { background:linear-gradient(135deg,var(--gold-light),var(--gold)); color:#fff; box-shadow:0 8px 24px rgba(200,137,42,.4); }
 .btn-gold:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(200,137,42,.5); }
 .btn-ghost { border:2px solid rgba(255,255,255,.6); color:#fff; }
 .btn-ghost:hover { background:rgba(255,255,255,.1); }
-.hero-stats { display:flex; justify-content:center; gap:48px; margin-top:56px; flex-wrap:wrap; }
-.hero-stats .stat { text-align:center; }
-.hero-stats .num { font-size:40px; font-weight:800; color:var(--gold-light); }
-.hero-stats .lbl { font-size:13px; color:rgba(255,255,255,.65); letter-spacing:1px; }
+.hero-stats { display:flex; gap:40px; margin-top:48px; flex-wrap:wrap; }
+.hero-stats .num { font-size:36px; font-weight:800; color:var(--gold-light); }
+.hero-stats .lbl { font-size:12px; color:rgba(255,255,255,.65); letter-spacing:1px; margin-top:2px; }
+/* right clickable image card */
+.hero-image { flex:0 0 44%; max-width:520px; position:relative; border-radius:20px; overflow:hidden; box-shadow:0 24px 64px rgba(0,0,0,.5); border:1px solid rgba(226,168,60,.35); display:block; text-decoration:none; }
+.hero-image img { width:100%; height:520px; object-fit:cover; display:block; transition:transform .7s; }
+.hero-image:hover img { transform:scale(1.05); }
+.hero-image .tag { position:absolute; bottom:18px; left:18px; background:rgba(15,15,26,.78); color:var(--gold-light); padding:9px 18px; border-radius:22px; font-size:13px; font-weight:700; border:1px solid rgba(226,168,60,.45); }
+.hero-image .tag i { margin-left:6px; }
 .scroll-hint { position:absolute; bottom:24px; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.5); font-size:22px; animation:bounce 2s infinite; z-index:2; }
 @keyframes bounce { 0%,100%{transform:translate(-50%,0);} 50%{transform:translate(-50%,8px);} }
 
@@ -155,10 +161,14 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
   .hamburger { display:block; }
   .nav-links { display:none; position:absolute; top:100%; left:0; right:0; background:rgba(15,15,26,.97); flex-direction:column; padding:20px 24px; gap:18px; align-items:flex-start; }
   .nav-links.open { display:flex; }
+  .hero { padding:110px 20px 70px; }
+  .hero-wrap { flex-direction:column; gap:36px; }
   .hero h1 { font-size:34px; }
   .hero p { font-size:16px; }
-  .hero-stats { gap:24px; }
-  .hero-stats .num { font-size:30px; }
+  .hero-stats { gap:28px; }
+  .hero-stats .num { font-size:28px; }
+  .hero-image { flex:1 1 auto; width:100%; max-width:100%; }
+  .hero-image img { height:360px; }
   .section { padding:60px 20px; }
   .section h2 { font-size:28px; }
   .cat-card { height:280px; }
@@ -191,20 +201,26 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
 <section class="hero">
   <div class="hero-bg" style="background-image:url('images/gallery/slab_1.jpg')"></div>
   <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <span class="hero-kicker" data-i18n="hero_kicker">Foshan Factory Direct</span>
-    <h1 data-i18n="hero_h1">Nature's Artwork,<br><span data-i18n="hero_h1_2">Crafted in Stone</span></h1>
-    <p data-i18n="hero_p">Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece is one of a kind — factory direct, save 30-50%. Prices start from $1,280.</p>
-    <div class="hero-btns">
-      <a href="#products" class="btn btn-gold" data-i18n="hero_btn1">Explore Collection</a>
-      <a href="https://wa.me/601124300699" class="btn btn-ghost"><i class="fab fa-whatsapp"></i> <span data-i18n="hero_btn2">Get Price</span></a>
+  <div class="hero-wrap">
+    <div class="hero-content">
+      <span class="hero-kicker" data-i18n="hero_kicker">Foshan Factory Direct</span>
+      <h1 data-i18n="hero_h1">Nature's Artwork,<br><span data-i18n="hero_h1_2">Crafted in Stone</span></h1>
+      <p data-i18n="hero_p">Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece carries unique natural veining — factory direct, save 30-50% vs showrooms.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-gold" data-i18n="hero_btn1">Explore Collection</a>
+        <a href="https://wa.me/601124300699" class="btn btn-ghost"><i class="fab fa-whatsapp"></i> <span data-i18n="hero_btn2">Get Price</span></a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="num">30<span style="font-size:18px">+</span></div><div class="lbl" data-i18n="stat1">Years Factory</div></div>
+        <div><div class="num">28</div><div class="lbl" data-i18n="stat2">Craft Steps</div></div>
+        <div><div class="num">30-50<span style="font-size:18px">%</span></div><div class="lbl" data-i18n="stat3">Savings</div></div>
+        <div><div class="num">50<span style="font-size:18px">+</span></div><div class="lbl" data-i18n="stat4">Stone Colors</div></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="num">30<span style="font-size:20px">+</span></div><div class="lbl" data-i18n="stat1">Years Factory</div></div>
-      <div class="stat"><div class="num">28</div><div class="lbl" data-i18n="stat2">Craft Steps</div></div>
-      <div class="stat"><div class="num">30-50<span style="font-size:20px">%</span></div><div class="lbl" data-i18n="stat3">Savings</div></div>
-      <div class="stat"><div class="num">50<span style="font-size:20px">+</span></div><div class="lbl" data-i18n="stat4">Stone Colors</div></div>
-    </div>
+    <a href="products.html" class="hero-image" aria-label="View Blue Jade collection">
+      <img src="images/products/blue_0.jpg" alt="Blue Jade luxury stone">
+      <span class="tag" data-i18n="hero_img_tag">Explore Blue Jade <i class="fas fa-arrow-right"></i></span>
+    </a>
   </div>
   <div class="scroll-hint"><i class="fas fa-chevron-down"></i></div>
 </section>
@@ -254,7 +270,7 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
     </div>
     <div class="f-item">
       <img src="images/products/blue_0.jpg" alt="Blue Sapphire">
-      <div class="body"><h3>Blue Sapphire</h3><p data-i18n="feat_4">Rare blue stone, truly one of a kind</p><a href="https://wa.me/601124300699?text=Hi%2C%20I%27m%20interested%20in%20Blue%20Sapphire" class="wa"><i class="fab fa-whatsapp"></i> <span data-i18n="feat_wa">Ask Price</span></a></div>
+      <div class="body"><h3>Blue Sapphire</h3><p data-i18n="feat_4">Rare blue stone with striking natural veining</p><a href="https://wa.me/601124300699?text=Hi%2C%20I%27m%20interested%20in%20Blue%20Sapphire" class="wa"><i class="fab fa-whatsapp"></i> <span data-i18n="feat_wa">Ask Price</span></a></div>
     </div>
   </div>
 </section>
@@ -266,7 +282,7 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
   <p class="sub" data-i18n="why_sub">Why importers, dealers & designers choose us</p>
   <div class="why-grid">
     <div class="why-card"><i class="fas fa-tags"></i><h3 data-i18n="why_1t">Factory Direct</h3><p data-i18n="why_1">No middlemen — save 30-50% vs showrooms</p></div>
-    <div class="why-card"><i class="fas fa-gem"></i><h3 data-i18n="why_2t">One of a Kind</h3><p data-i18n="why_2">Natural veining, every slab unique</p></div>
+    <div class="why-card"><i class="fas fa-gem"></i><h3 data-i18n="why_2t">Unique Veining</h3><p data-i18n="why_2">Natural veining, every slab unique</p></div>
     <div class="why-card"><i class="fas fa-handshake"></i><h3 data-i18n="why_3t">28 Craft Steps</h3><p data-i18n="why_3">3 months mining + meticulous craftsmanship</p></div>
     <div class="why-card"><i class="fas fa-building"></i><h3 data-i18n="why_4t">Factory Visit</h3><p data-i18n="why_4">See the stone yourself — we welcome inspection</p></div>
   </div>
@@ -348,16 +364,16 @@ var I18N = {
   en: {
     nav_products:"Products", nav_factory:"Factory", nav_why:"Why Us", nav_contact:"Contact", nav_wa:"WhatsApp",
     hero_kicker:"Foshan Factory Direct", hero_h1:"Nature's Artwork,", hero_h1_2:"Crafted in Stone",
-    hero_p:"Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece is one of a kind — factory direct, save 30-50%. Prices start from $1,280.",
-    hero_btn1:"Explore Collection", hero_btn2:"Get Price",
+    hero_p:"Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece carries unique natural veining — factory direct, save 30-50% vs showrooms.",
+    hero_btn1:"Explore Collection", hero_btn2:"Get Price", hero_img_tag:"Explore Blue Jade",
     stat1:"Years Factory", stat2:"Craft Steps", stat3:"Savings", stat4:"Stone Colors",
     cat_tag:"Our Collection", cat_h2:"Luxury Stone Furniture", cat_sub:"Explore our ranges — each piece crafted from a single natural stone slab",
     cat_dining:"Dining Tables", cat_dining_s:"Marble dining tables & round tops", cat_coffee:"Coffee Tables", cat_coffee_s:"Exotic stone coffee & side tables",
     cat_wall:"Feature Walls", cat_wall_s:"Bookmatch slabs for walls & islands", cat_island:"Islands & Bars", cat_island_s:"Kitchen islands, bars & consoles", cat_view:"View →",
     feat_tag:"Featured", feat_h2:"Signature Pieces", feat_sub:"Our most requested natural stone selections",
-    feat_1:"Creamy white with elegant grey veining", feat_2:"Deep black with dramatic white veins", feat_3:"Rich green with golden mineral veins", feat_4:"Rare blue stone, truly one of a kind", feat_wa:"Ask Price",
+    feat_1:"Creamy white with elegant grey veining", feat_2:"Deep black with dramatic white veins", feat_3:"Rich green with golden mineral veins", feat_4:"Rare blue stone with striking natural veining", feat_wa:"Ask Price",
     why_tag:"Why TENGMAI", why_h2:"The Source Factory Advantage", why_sub:"Why importers, dealers & designers choose us",
-    why_1t:"Factory Direct", why_1:"No middlemen — save 30-50% vs showrooms", why_2t:"One of a Kind", why_2:"Natural veining, every slab unique",
+    why_1t:"Factory Direct", why_1:"No middlemen — save 30-50% vs showrooms", why_2t:"Unique Veining", why_2:"Natural veining, every slab unique",
     why_3t:"28 Craft Steps", why_3:"3 months mining + meticulous craftsmanship", why_4t:"Factory Visit", why_4:"See the stone yourself — we welcome inspection",
     fac_tag:"Our Factory", fac_h2:"Inside TENGMAI", fac_sub:"Real factory, real craftsmanship — Foshan, Guangdong, China",
     fac_1:"Stone workshop & fabrication", fac_2:"Natural stone slab yard", fac_3:"Precision polishing & finishing",
@@ -367,16 +383,16 @@ var I18N = {
   zh: {
     nav_products:"产品", nav_factory:"工厂", nav_why:"为什么选我们", nav_contact:"联系", nav_wa:"WhatsApp",
     hero_kicker:"佛山源头工厂直供", hero_h1:"大自然的艺术品", hero_h1_2:"匠心打造于石",
-    hero_p:"佛山30年工厂，天然奢石家具。每一件都独一无二——源头直供，省30-50%。",
-    hero_btn1:"浏览产品", hero_btn2:"获取报价",
+    hero_p:"佛山30年工厂，天然奢石家具。每一件都拥有独特纹理——源头直供，比商场省30-50%。",
+    hero_btn1:"浏览产品", hero_btn2:"获取报价", hero_img_tag:"查看蓝翡翠系列",
     stat1:"年工厂", stat2:"道工序", stat3:"节省", stat4:"种花色",
     cat_tag:"我们的产品", cat_h2:"奢石家具", cat_sub:"探索我们的系列——每一件都来自一整块天然石材",
     cat_dining:"餐桌", cat_dining_s:"大理石餐桌及圆台面", cat_coffee:"茶几", cat_coffee_s:"异域奢石茶几边几",
     cat_wall:"背景墙", cat_wall_s:"书对纹大板背景墙", cat_island:"岛台吧台", cat_island_s:"厨房岛台、吧台、玄关柜", cat_view:"查看 →",
-    feat_tag:"精选", feat_h2:"招牌作品", feat_sub:"最受欢迎的天然石材选择",
-    feat_1:"奶油白底优雅灰纹", feat_2:"深黑底戏剧性白纹", feat_3:"翠绿底金色矿脉", feat_4:"稀有蓝石，独一无二", feat_wa:"询价",
+    feat_tag:"精选", feat_h2:"招牌作品", feat_sub:"广受欢迎的天然石材选择",
+    feat_1:"奶油白底优雅灰纹", feat_2:"深黑底戏剧性白纹", feat_3:"翠绿底金色矿脉", feat_4:"稀有蓝石，纹理夺目", feat_wa:"询价",
     why_tag:"为什么选腾脉", why_h2:"源头工厂的优势", why_sub:"进口商、经销商和设计师选择我们的原因",
-    why_1t:"工厂直供", why_1:"没有中间商——比商场省30-50%", why_2t:"独一无二", why_2:"天然纹理，每块大板都独特",
+    why_1t:"工厂直供", why_1:"没有中间商——比商场省30-50%", why_2t:"纹理独特", why_2:"天然纹理，每块大板都独特",
     why_3t:"28道工序", why_3:"3个月开采+精益求精的工艺", why_4t:"欢迎验厂", why_4:"亲眼看看石头——欢迎来厂参观",
     fac_tag:"我们的工厂", fac_h2:"走进腾脉", fac_sub:"真实工厂，真实工艺——中国广东佛山",
     fac_1:"石材加工车间", fac_2:"天然石材大板堆场", fac_3:"精密抛光与收尾",
@@ -386,8 +402,8 @@ var I18N = {
   ar: {
     nav_products:"المنتجات", nav_factory:"المصنع", nav_why:"لماذا نحن", nav_contact:"اتصل", nav_wa:"واتساب",
     hero_kicker:"مصنع فوشان مباشرة", hero_h1:"تحفة الطبيعة،", hero_h1_2:"مصنوعة من الحجر",
-    hero_p:"أثاث حجر فاخر من مصنعنا في فوشان بالصين منذ 30 عاماً. كل قطعة فريدة — مباشرة من المصنع، وفّر 30-50%.",
-    hero_btn1:"استكشف المجموعة", hero_btn2:"احصل على السعر",
+    hero_p:"أثاث حجر فاخر من مصنعنا في فوشان بالصين منذ 30 عاماً. كل قطعة بعروق طبيعية فريدة — مباشرة من المصنع، وفّر 30-50%.",
+    hero_btn1:"استكشف المجموعة", hero_btn2:"احصل على السعر", hero_img_tag:"استكشف اليشم الأزرق",
     stat1:"سنة خبرة", stat2:"خطوة تصنيع", stat3:"توفير", stat4:"لون حجر",
     cat_tag:"مجموعتنا", cat_h2:"أثاث الحجر الفاخر", cat_sub:"استكشف مجموعاتنا — كل قطعة مصنوعة من لوح حجر طبيعي واحد",
     cat_dining:"طاولات الطعام", cat_dining_s:"طاولات رخام وقطع دائرية", cat_coffee:"طاولات القهوة", cat_coffee_s:"طاولات حجرية فاخرة",
