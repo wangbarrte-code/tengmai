@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product Catalog - TENGMAI Luxury Stone Furniture</title>
-<meta name="description" content="Browse TENGMAI luxury stone catalog: Dining tables, coffee tables, feature walls, islands. White, black, green, blue, Pandora series. Factory direct from Foshan, China.">
+<meta name="description" content="Browse the full TENGMAI luxury stone catalog: 107 natural stone selections across 8 series — white, black, Chinese, green, blue, yellow, red and gray. Factory direct from Foshan, China.">
 <meta name="keywords" content="luxury stone, marble catalog, stone table, natural stone, Foshan factory, Pandora stone, marble dining table">
 <link rel="canonical" href="https://wangbarrte-code.github.io/tengmai/products.html">
 <script type="application/ld+json">
@@ -13,7 +13,7 @@
   "@type": "CollectionPage",
   "name": "TENGMAI Luxury Stone Catalog",
   "url": "https://wangbarrte-code.github.io/tengmai/products.html",
-  "description": "35 natural stone selections across 7 series — white, black, Chinese, green, blue, yellow and Pandora. Factory direct from Foshan, China."
+  "description": "107 natural stone selections across 8 series — white, black, Chinese, green, blue, yellow, red and gray. Factory direct from Foshan, China."
 }
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -33,7 +33,6 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
 .lang-switch button.active{background:var(--gold);border-color:var(--gold);}
 .wa-nav{background:#25d366;color:#fff;padding:8px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;}
 .hamburger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;}
-
 .header{text-align:center;padding:60px 20px 30px;}
 .header h1{font-size:36px;margin-bottom:8px;}
 .header p{color:#777;font-size:14px;}
@@ -41,34 +40,26 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
 .cat-tab{padding:10px 22px;border-radius:24px;border:2px solid #ddd;background:#fff;font-size:14px;cursor:pointer;transition:.2s;color:#555;}
 .cat-tab:hover{border-color:var(--gold);color:var(--gold);}
 .cat-tab.active{background:var(--dark2);border-color:var(--dark2);color:#fff;}
-
-.products{max-width:1200px;margin:0 auto;padding:0 24px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;}
+.products{max-width:1300px;margin:0 auto;padding:0 24px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px;}
 .p-item{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.07);transition:.3s;cursor:pointer;}
 .p-item:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,.13);}
-.p-item img{width:100%;height:170px;object-fit:cover;background:#eee;}
-.p-item .body{padding:14px;}
-.p-item h3{font-size:15px;margin-bottom:4px;}
+.p-item img{width:100%;height:150px;object-fit:cover;background:#eee;}
+.p-item .body{padding:12px;}
+.p-item h3{font-size:14px;margin-bottom:3px;}
 .p-item h3 a{color:inherit;text-decoration:none;}
-.p-item .en{font-size:11px;color:#999;}
-.p-item .actions{display:flex;gap:8px;margin-top:10px;}
-.p-item .wa{flex:1;background:#25d366;color:#fff;text-decoration:none;text-align:center;padding:8px;border-radius:18px;font-size:11px;font-weight:700;}
+.p-item .en{font-size:10.5px;color:#999;}
+.p-item .zh-name{font-size:11px;color:#c8892a;margin-top:2px;}
+.p-item .actions{display:flex;gap:8px;margin-top:8px;}
+.p-item .wa{flex:1;background:#25d366;color:#fff;text-decoration:none;text-align:center;padding:7px;border-radius:18px;font-size:10.5px;font-weight:700;}
 .p-item .wa:hover{opacity:.9;}
-
 .footer{text-align:center;padding:30px;color:#999;font-size:12px;background:var(--dark);color:rgba(255,255,255,.7);}
 .footer a{color:var(--gold-light);text-decoration:none;}
-
-#lb{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.94);z-index:999;align-items:center;justify-content:center;}
-#lb img{max-width:90vw;max-height:80vh;border-radius:10px;}
-#lb .close{position:absolute;top:15px;right:25px;color:#fff;font-size:38px;cursor:pointer;background:none;border:none;}
-
 @media(max-width:768px){
   .hamburger{display:block;}
   .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(15,15,26,.98);flex-direction:column;padding:18px 24px;align-items:flex-start;}
   .nav-links.open{display:flex;}
   .header h1{font-size:28px;}
 }
-
-.pandora-note{font-size:11px;color:#c9a227;margin-top:4px;font-weight:500;}
 </style>
 </head>
 <body>
@@ -78,10 +69,6 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
     <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
     <div class="nav-links" id="navLinks">
       <a href="index.html" data-i18n="nav_home">Home</a>
-      <a href="#dining" data-i18n="nav_dining">Dining</a>
-      <a href="#coffee" data-i18n="nav_coffee">Coffee</a>
-      <a href="#feature" data-i18n="nav_wall">Walls</a>
-      <a href="#island" data-i18n="nav_island">Islands</a>
       <div class="lang-switch">
         <button onclick="setLang('en')" id="btn-en" class="active">EN</button>
         <button onclick="setLang('zh')" id="btn-zh">中</button>
@@ -91,107 +78,154 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
     </div>
   </div>
 </nav>
-
 <div class="header">
   <h1 data-i18n="h1">Luxury Stone Catalog</h1>
-  <p data-i18n="sub">6 series · 30 natural stone selections · Factory direct</p>
-  <div class="cat-tabs">
-    <button class="cat-tab active" data-filter="all" data-i18n="tab_all">All</button>
-    <button class="cat-tab" data-filter="white" data-i18n="tab_white">White</button>
-    <button class="cat-tab" data-filter="black" data-i18n="tab_black">Black</button>
-    <button class="cat-tab" data-filter="chinese" data-i18n="tab_chinese">Chinese</button>
-    <button class="cat-tab" data-filter="green" data-i18n="tab_green">Green</button>
-    <button class="cat-tab" data-filter="blue" data-i18n="tab_blue">Blue</button>
-    <button class="cat-tab" data-filter="pandora" data-i18n="tab_pandora">Pandora</button>
-  </div>
+  <p data-i18n="sub">107 natural stone selections · 8 series · Factory direct</p>
 </div>
-
-<div class="products" id="products">
-<!-- products injected by JS -->
+<div class="cat-tabs">
+  <button class="cat-tab active" data-filter="all" data-i18n="tab_all">All</button>
+    <button class="cat-tab" data-filter="white" data-i18n="tab_white">白色系</button>
+    <button class="cat-tab" data-filter="black" data-i18n="tab_black">黑色系</button>
+    <button class="cat-tab" data-filter="chinese" data-i18n="tab_chinese">中式系</button>
+    <button class="cat-tab" data-filter="green" data-i18n="tab_green">绿色系</button>
+    <button class="cat-tab" data-filter="blue" data-i18n="tab_blue">蓝色系</button>
+    <button class="cat-tab" data-filter="yellow" data-i18n="tab_yellow">黄色系</button>
+    <button class="cat-tab" data-filter="red" data-i18n="tab_red">红色系</button>
+    <button class="cat-tab" data-filter="gray" data-i18n="tab_gray">灰色系</button>
 </div>
-
-<footer class="footer">
-  <div><i class="fab fa-whatsapp" style="color:#25d366"></i> WhatsApp: @v_barret775 | <i class="fab fa-weixin" style="color:#07c160"></i> WeChat: Barret775</div>
-  <div style="margin-top:6px">TENGMAI · <a href="index.html" data-i18n="nav_home">Back to Home</a> · <span id="busuanzi_value_site_pv" style="color:#c8892a"></span> views</div>
-</footer>
-
-<!-- 访问统计：不蒜子（免费，无需注册，实时计数） -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Google Analytics 4 (GA4)：实时访客/国家/来源分析 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1RG258BYN"></script>
+<div class="products" id="products"></div>
+<div class="footer">TENGMAI Luxury Stone Furniture · Foshan, China · <a href="https://wa.me/601124300699">WhatsApp</a> · <a href="mailto:wangbarrte@gmail.com">wangbarrte@gmail.com</a></div>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P1RG258BYN');
-</script>
-
-<div id="lb" onclick="this.style.display='none'"><button class="close">×</button><img id="lbImg" src=""></div>
-
-<script>
-/* ===== Products data (7 series × 5 = 35) ===== */
+/* ===== Products data (107 selections, 8 series) ===== */
 var PRODUCTS = [
-  // White
-  {c:"white", img:"images/products/white_0.jpg", en:"Fine Flower White", zh:"细花白", ar:"زهرة بيضاء ناعمة", slug:"fine-flower-white"},
-  {c:"white", img:"images/products/white_1.jpg", en:"Middle Flower White", zh:"中花白", ar:"زهرة بيضاء متوسطة", slug:"middle-flower-white"},
-  {c:"white", img:"images/products/white_2.jpg", en:"Big Flower White", zh:"大花白", ar:"زهرة بيضاء كبيرة", slug:"big-flower-white"},
-  {c:"white", img:"images/products/white_3.jpg", en:"Jazz White", zh:"爵士白", ar:"أبيض جاز", slug:"jazz-white"},
-  {c:"white", img:"images/products/white_4.jpg", en:"Elegant White", zh:"雅士白", ar:"أبيض أنيق", slug:"elegant-white"},
-  // Black
-  {c:"black", img:"images/products/black_0.jpg", en:"Laurent Black", zh:"劳伦黑金", ar:"أسود لوران", slug:"laurent-black"},
-  {c:"black", img:"images/products/black_1.jpg", en:"Black White Root", zh:"黑白根", ar:"أسود بجذور بيضاء", slug:"black-white-root"},
-  {c:"black", img:"images/products/black_2.jpg", en:"Ancient Wood Grain", zh:"古木纹", ar:"خشب قديم", slug:"ancient-wood-grain"},
-  {c:"black", img:"images/products/black_3.jpg", en:"Black Rose", zh:"黑玫瑰", ar:"وردة سوداء", slug:"black-rose"},
-  {c:"black", img:"images/products/black_4.jpg", en:"Silver White Dragon", zh:"银白龙", ar:"تنين أبيض فضي", slug:"silver-white-dragon"},
-  // Chinese
-  {c:"chinese", img:"images/products/chinese_0.jpg", en:"Fragrant Snow Plum", zh:"香雪梅", ar:"برقوق الثلج", slug:"fragrant-snow-plum"},
-  {c:"chinese", img:"images/products/chinese_1.jpg", en:"Cold River Snow", zh:"寒江雪", ar:"ثلج النهر البارد", slug:"cold-river-snow"},
-  {c:"chinese", img:"images/products/chinese_2.jpg", en:"Snow Mountain Orchid", zh:"雪山兰", ar:"سحلبية الجبل", slug:"snow-mountain-orchid"},
-  {c:"chinese", img:"images/products/chinese_3.jpg", en:"Snow Mountain Flying Fox", zh:"雪山飞狐", ar:"ثعلب الثلج الطائر", slug:"snow-mountain-flying-fox"},
-  {c:"chinese", img:"images/products/chinese_4.jpg", en:"Tianshan Twilight Snow", zh:"天山暮雪", ar:"ثلج تيانشان", slug:"tianshan-twilight-snow"},
-  // Green
-  {c:"green", img:"images/products/green_0.jpg", en:"Amazon Green", zh:"亚马逊绿", ar:"أمازون أخضر", slug:"amazon-green"},
-  {c:"green", img:"images/products/green_1.jpg", en:"Cold Jade", zh:"冷翡翠", ar:"يشم بارد", slug:"cold-jade"},
-  {c:"green", img:"images/products/green_2.jpg", en:"Ancestral Green", zh:"祖传绿", ar:"أخضر تراثي", slug:"ancestral-green"},
-  {c:"green", img:"images/products/green_3.jpg", en:"Patek Jade Green", zh:"百达翡丽绿", ar:"باتيك جاد أخضر", slug:"patek-jade-green"},
-  {c:"green", img:"images/products/green_4.jpg", en:"Prada Green", zh:"普拉达绿", ar:"برادا أخضر", slug:"prada-green"},
-  // Blue
-  {c:"blue", img:"images/products/blue_0.jpg", en:"Blue Jade", zh:"蓝翡翠", ar:"يشم أزرق", slug:"blue-jade"},
-  {c:"blue", img:"images/products/blue_1.jpg", en:"Blue Crystal", zh:"蓝水晶", ar:"كريستال أزرق", slug:"blue-crystal"},
-  {c:"blue", img:"images/products/blue_2.jpg", en:"Blue Gold Sand", zh:"蓝金沙", ar:"رمال ذهبية زرقاء", slug:"blue-gold-sand"},
-  {c:"blue", img:"images/products/blue_3.jpg", en:"Blue Jade Onyx", zh:"蓝玉髓", ar:"أونيكس أزرق", slug:"blue-jade-onyx"},
-  {c:"blue", img:"images/products/blue_4.jpg", en:"Dream Blue Gem", zh:"梦幻蓝宝", ar:"جوهرة زرقاء حلم", slug:"dream-blue-gem"},
-  // Yellow
-  // Pandora
-  {c:"pandora", img:"images/products/yellow_0.jpg", en:"Old Mine Pandora", zh:"老矿潘多拉", ar:"باندورا القديمة", slug:"old-mine-pandora"},
-  {c:"pandora", img:"images/products/yellow_1.jpg", en:"Large Crystal Pandora", zh:"大水晶潘多拉", ar:"باندورا الكريستالية", slug:"large-crystal-pandora"},
-  {c:"pandora", img:"images/products/yellow_2.jpg", en:"White Base Pandora", zh:"白底潘多拉", ar:"باندورا بيضاء", slug:"white-base-pandora"},
-  {c:"pandora", img:"images/products/yellow_3.jpg", en:"Blue Diamond Pandora", zh:"蓝钻潘多拉", ar:"باندورا الماس الأزرق", slug:"blue-diamond-pandora"},
-  {c:"pandora", img:"images/products/yellow_4.jpg", en:"Green Diamond Pandora", zh:"绿钻潘多拉", ar:"باندورا الماس الأخضر", slug:"green-diamond-pandora"}
+  {c:"white", img:"images/catalog/p010.jpg", en:"Fine Flower White", zh:"细花白", ar:"زهرة بيضاء ناعمة", slug:"fine-flower-white"},
+  {c:"white", img:"images/catalog/p011.jpg", en:"Middle Flower White", zh:"中花白", ar:"زهرة بيضاء متوسطة", slug:"middle-flower-white"},
+  {c:"white", img:"images/catalog/p012.jpg", en:"Big Flower White", zh:"大花白", ar:"زهرة بيضاء كبيرة", slug:"big-flower-white"},
+  {c:"white", img:"images/catalog/p013.jpg", en:"Jazz White", zh:"爵士白", ar:"أبيض جاز", slug:"jazz-white"},
+  {c:"white", img:"images/catalog/p014.jpg", en:"Elegant White", zh:"雅士白", ar:"أبيض أنيق", slug:"elegant-white"},
+  {c:"white", img:"images/catalog/p015.jpg", en:"Snowflake White", zh:"雪花白", ar:"أبيض الثلج", slug:"snowflake-white"},
+  {c:"white", img:"images/catalog/p016.jpg", en:"Elephant White", zh:"大象白", ar:"أبيض الفيل", slug:"elephant-white"},
+  {c:"white", img:"images/catalog/p017.jpg", en:"Milan White Jade", zh:"米兰白玉", ar:"يشم ميلان الأبيض", slug:"milan-white-jade"},
+  {c:"white", img:"images/catalog/p018.jpg", en:"New Fendi White", zh:"新芬迪白", ar:"أبيض فيندي الجديد", slug:"new-fendi-white"},
+  {c:"white", img:"images/catalog/p019.jpg", en:"Kari Ice Jade", zh:"卡里冰玉", ar:"يشم كاري الجليدي", slug:"kari-ice-jade"},
+  {c:"white", img:"images/catalog/p020.jpg", en:"Panda Stone", zh:"熊猫白", ar:"أبيض الباندا", slug:"panda-stone"},
+  {c:"white", img:"images/catalog/p021.jpg", en:"White Ice Jade", zh:"白冰玉", ar:"يشم أبيض جليدي", slug:"white-ice-jade"},
+  {c:"white", img:"images/catalog/p022.jpg", en:"White Crystal", zh:"白水晶", ar:"كريستال أبيض", slug:"white-crystal"},
+  {c:"white", img:"images/catalog/p023.jpg", en:"Snow White Princess", zh:"白雪公主", ar:"بياض الثلج", slug:"snow-white-princess"},
+  {c:"white", img:"images/catalog/p024.jpg", en:"Fendi White", zh:"芬迪白", ar:"أبيض فيندي", slug:"fendi-white"},
+  {c:"white", img:"images/catalog/p025.jpg", en:"Bulgari White", zh:"宝格丽", ar:"بولغاري", slug:"bulgari-white"},
+  {c:"white", img:"images/catalog/p026.jpg", en:"Fish Maw White", zh:"鱼肚白", ar:"أبيض بطن السمكة", slug:"fish-maw-white"},
+  {c:"white", img:"images/catalog/p027.jpg", en:"Yugoslavia White", zh:"南斯拉夫白", ar:"أبيض يوغوسلافيا", slug:"yugoslavia-white"},
+  {c:"white", img:"images/catalog/p028.jpg", en:"Platinum Sand", zh:"白金沙", ar:"رمل ذهبي أبيض", slug:"platinum-sand"},
+  {c:"chinese", img:"images/catalog/p029.jpg", en:"Fragrant Snow Plum", zh:"香雪梅", ar:"برقوق الثلج العطري", slug:"fragrant-snow-plum"},
+  {c:"chinese", img:"images/catalog/p030.jpg", en:"Cold River Snow", zh:"寒江雪", ar:"ثلج النهر البارد", slug:"cold-river-snow"},
+  {c:"chinese", img:"images/catalog/p031.jpg", en:"Snow Mountain Orchid", zh:"雪山兰", ar:"سحلبية الجبل الثلجي", slug:"snow-mountain-orchid"},
+  {c:"chinese", img:"images/catalog/p032.jpg", en:"Snow Mountain Flying Fox", zh:"雪山飞狐", ar:"ثعلب الجبل الطائر", slug:"snow-mountain-flying-fox"},
+  {c:"chinese", img:"images/catalog/p033.jpg", en:"Tianshan Twilight Snow", zh:"天山暮雪", ar:"ثلج تيانشان المسائي", slug:"tianshan-twilight-snow"},
+  {c:"chinese", img:"images/catalog/p034.jpg", en:"Water Cloud Veil", zh:"水云纱", ar:"شاش الماء والسحاب", slug:"water-cloud-veil"},
+  {c:"chinese", img:"images/catalog/p035.jpg", en:"Karakata Silk Road", zh:"丝绸之路", ar:"طريق الحرير", slug:"karakata-silk-road"},
+  {c:"chinese", img:"images/catalog/p036.jpg", en:"Rivers & Seas", zh:"海纳百川", ar:"البحر يستوعب الأنهار", slug:"rivers-and-seas"},
+  {c:"chinese", img:"images/catalog/p037.jpg", en:"Silver Cedar", zh:"银杉", ar:"شجرة الفضة", slug:"silver-cedar"},
+  {c:"chinese", img:"images/catalog/p038.jpg", en:"Jade Valley Orchid", zh:"翠谷幽兰", ar:"سحلبية الوادي", slug:"jade-valley-orchid"},
+  {c:"chinese", img:"images/catalog/p039.jpg", en:"Peacock Spreading", zh:"孔雀开屏", ar:"طاووس يفتح ذيله", slug:"peacock-spreading"},
+  {c:"chinese", img:"images/catalog/p040.jpg", en:"Golden Peacock", zh:"金孔雀", ar:"الطاووس الذهبي", slug:"golden-peacock"},
+  {c:"chinese", img:"images/catalog/p041.jpg", en:"Golden Branch Jade Leaf", zh:"金枝玉叶", ar:"الغصن الذهبي والأوراق اليشمية", slug:"golden-branch-jade-leaf"},
+  {c:"chinese", img:"images/catalog/p042.jpg", en:"Purple Mountain Water", zh:"紫山水", ar:"جبال ومياه أرجوانية", slug:"purple-mountain-water"},
+  {c:"chinese", img:"images/catalog/p043.jpg", en:"Loewe Stone", zh:"罗意威", ar:"لووي", slug:"loewe-stone"},
+  {c:"black", img:"images/catalog/p044.jpg", en:"Laurent Black Gold", zh:"劳伦黑金", ar:"أسود لوران الذهبي", slug:"laurent-black-gold"},
+  {c:"black", img:"images/catalog/p045.jpg", en:"Black White Root", zh:"黑白根", ar:"جذور سوداء وبيضاء", slug:"black-white-root"},
+  {c:"black", img:"images/catalog/p046.jpg", en:"Ancient Wood Grain", zh:"古木纹", ar:"عروق الخشب القديم", slug:"ancient-wood-grain"},
+  {c:"black", img:"images/catalog/p047.jpg", en:"Black Rose", zh:"黑玫瑰", ar:"وردة سوداء", slug:"black-rose"},
+  {c:"black", img:"images/catalog/p048.jpg", en:"Silver White Dragon", zh:"银白龙", ar:"تنين أبيض فضي", slug:"silver-white-dragon"},
+  {c:"black", img:"images/catalog/p049.jpg", en:"Yellow Base Platinum Diamond", zh:"黄底铂金钻", ar:"ألماس بلاتيني بقاعدة صفراء", slug:"yellow-base-platinum-diamond"},
+  {c:"black", img:"images/catalog/p050.jpg", en:"Black Base Platinum Diamond", zh:"黑底铂金钻", ar:"ألماس بلاتيني بقاعدة سوداء", slug:"black-base-platinum-diamond"},
+  {c:"black", img:"images/catalog/p051.jpg", en:"Bulgari Black", zh:"宝格丽黑", ar:"بولغاري أسود", slug:"bulgari-black"},
+  {c:"black", img:"images/catalog/p052.jpg", en:"Cosmic Gold", zh:"黄金丝绸", ar:"حرير ذهبي كوني", slug:"cosmic-gold"},
+  {c:"black", img:"images/catalog/p053.jpg", en:"Cosmic Black", zh:"古驰黑", ar:"غوتشي أسود", slug:"cosmic-black"},
+  {c:"black", img:"images/catalog/p054.jpg", en:"Versace Black", zh:"范思哲黑", ar:"فيرساتشي أسود", slug:"versace-black"},
+  {c:"green", img:"images/catalog/p055.jpg", en:"Edinburgh Green", zh:"爱丁堡绿", ar:"أخضر إدنبرة", slug:"edinburgh-green"},
+  {c:"green", img:"images/catalog/p056.jpg", en:"Ireland Green", zh:"爱尔兰绿", ar:"أخضر أيرلندا", slug:"ireland-green"},
+  {c:"green", img:"images/catalog/p057.jpg", en:"Patek Jade", zh:"百达翡翠", ar:"يشم باتيك", slug:"patek-jade"},
+  {c:"green", img:"images/catalog/p058.jpg", en:"Cloud Jade", zh:"云中翡翠", ar:"يشم السحاب", slug:"cloud-jade"},
+  {c:"green", img:"images/catalog/p059.jpg", en:"Dandong Green", zh:"丹东绿", ar:"أخضر داندونغ", slug:"dandong-green"},
+  {c:"green", img:"images/catalog/p060.jpg", en:"Royal Green", zh:"皇家绿", ar:"أخضر ملكي", slug:"royal-green"},
+  {c:"green", img:"images/catalog/p061.jpg", en:"Jaya Green", zh:"加雅绿", ar:"أخضر جايا", slug:"jaya-green"},
+  {c:"green", img:"images/catalog/p062.jpg", en:"Cold Jadeite", zh:"冷翡翠", ar:"يشم بارد", slug:"cold-jadeite"},
+  {c:"green", img:"images/catalog/p063.jpg", en:"Shangri-La Jade", zh:"香格里拉翡翠", ar:"يشم شانغريلا", slug:"shangri-la-jade"},
+  {c:"green", img:"images/catalog/p064.jpg", en:"Twilight City", zh:"暮光之城", ar:"مدينة الشفق", slug:"twilight-city"},
+  {c:"green", img:"images/catalog/p065.jpg", en:"Four Seasons Green", zh:"四季绿", ar:"أخضر الفصول الأربعة", slug:"four-seasons-green"},
+  {c:"green", img:"images/catalog/p066.jpg", en:"Avocado Green", zh:"牛油果绿", ar:"أخضر الأفوكادو", slug:"avocado-green"},
+  {c:"green", img:"images/catalog/p067.jpg", en:"Green Jade", zh:"青玉", ar:"يشم أخضر", slug:"green-jade"},
+  {c:"green", img:"images/catalog/p068.jpg", en:"Emerald Green", zh:"祖母绿", ar:"زمرد", slug:"emerald-green"},
+  {c:"green", img:"images/catalog/p069.jpg", en:"Prada Green", zh:"普拉达绿", ar:"أخضر برادا", slug:"prada-green"},
+  {c:"green", img:"images/catalog/p070.jpg", en:"Swan Lake", zh:"天鹅湖", ar:"بحيرة البجع", slug:"swan-lake"},
+  {c:"green", img:"images/catalog/p071.jpg", en:"Mica Green", zh:"云母绿", ar:"أخضر الميكا", slug:"mica-green"},
+  {c:"green", img:"images/catalog/p072.jpg", en:"Glacier Green", zh:"冰川绿", ar:"أخضر النهر الجليدي", slug:"glacier-green"},
+  {c:"green", img:"images/catalog/p073.jpg", en:"Naqiu Green", zh:"纳秋绿", ar:"أخضر ناتشيو", slug:"naqiu-green"},
+  {c:"green", img:"images/catalog/p074.jpg", en:"Italy Green", zh:"意大利绿", ar:"أخضر إيطاليا", slug:"italy-green"},
+  {c:"green", img:"images/catalog/p075.jpg", en:"India Green", zh:"印度绿", ar:"أخضر الهند", slug:"india-green"},
+  {c:"green", img:"images/catalog/p076.jpg", en:"Pear Blossom Snow", zh:"梨花飘雪", ar:"ثلج زهر الكمثرى", slug:"pear-blossom-snow"},
+  {c:"green", img:"images/catalog/p077.jpg", en:"Monet Green", zh:"莫奈绿", ar:"أخضر مونيه", slug:"monet-green"},
+  {c:"green", img:"images/catalog/p078.jpg", en:"Fendi Green", zh:"芬迪绿", ar:"أخضر فيندي", slug:"fendi-green"},
+  {c:"green", img:"images/catalog/p079.jpg", en:"Amazon Green", zh:"亚马逊绿", ar:"أخضر الأمازون", slug:"amazon-green"},
+  {c:"blue", img:"images/catalog/p080.jpg", en:"Blue Jadeite", zh:"蓝翡翠", ar:"يشم أزرق", slug:"blue-jadeite"},
+  {c:"blue", img:"images/catalog/p081.jpg", en:"Blue Gold Sand", zh:"蓝金沙", ar:"رمل ذهبي أزرق", slug:"blue-gold-sand"},
+  {c:"blue", img:"images/catalog/p082.jpg", en:"Blue Crystal", zh:"蓝水晶", ar:"كريستال أزرق", slug:"blue-crystal"},
+  {c:"blue", img:"images/catalog/p083.jpg", en:"Blue Jade", zh:"蓝玉", ar:"يشم أزرق فاتح", slug:"blue-jade"},
+  {c:"blue", img:"images/catalog/p084.jpg", en:"Dream Blue Gem", zh:"梦幻蓝宝", ar:"جوهرة زرقاء حالمة", slug:"dream-blue-gem"},
+  {c:"blue", img:"images/catalog/p085.jpg", en:"Fendi Blue", zh:"芬迪蓝", ar:"أزرق فيندي", slug:"fendi-blue"},
+  {c:"blue", img:"images/catalog/p086.jpg", en:"Dior Blue", zh:"迪奥蓝", ar:"أزرق ديور", slug:"dior-blue"},
+  {c:"blue", img:"images/catalog/p087.jpg", en:"Gran Yuntian Sky", zh:"格兰云天", ar:"سماء جران الزرقاء", slug:"gran-yuntian-sky"},
+  {c:"blue", img:"images/catalog/p088.jpg", en:"Mirror of the Sky", zh:"天空之境", ar:"مرآة السماء", slug:"mirror-of-the-sky"},
+  {c:"blue", img:"images/catalog/p089.jpg", en:"Cloisonne Blue", zh:"景泰蓝", ar:"أزرق كلوزونيه", slug:"cloisonne-blue"},
+  {c:"blue", img:"images/catalog/p090.jpg", en:"Bolivia Blue", zh:"玻利维亚蓝", ar:"أزرق بوليفيا", slug:"bolivia-blue"},
+  {c:"yellow", img:"images/catalog/p091.jpg", en:"Old Mine Pandora", zh:"老矿潘多拉", ar:"باندورا المنجم القديم", slug:"old-mine-pandora"},
+  {c:"yellow", img:"images/catalog/p092.jpg", en:"Green Diamond Pandora", zh:"绿钻潘多拉", ar:"باندورا الماس الأخضر", slug:"green-diamond-pandora"},
+  {c:"yellow", img:"images/catalog/p093.jpg", en:"Blue Diamond Pandora", zh:"蓝钻潘多拉", ar:"باندورا الماس الأزرق", slug:"blue-diamond-pandora"},
+  {c:"yellow", img:"images/catalog/p094.jpg", en:"White Base Pandora", zh:"白底潘多拉", ar:"باندورا بالقاعدة البيضاء", slug:"white-base-pandora"},
+  {c:"yellow", img:"images/catalog/p095.jpg", en:"Large Crystal Pandora", zh:"大水晶潘多拉", ar:"باندورا الكريستال الكبير", slug:"large-crystal-pandora"},
+  {c:"yellow", img:"images/catalog/p096.jpg", en:"Turkey Venice Brown", zh:"土耳其威尼斯棕", ar:"بني فينيسيا التركي", slug:"turkey-venice-brown"},
+  {c:"yellow", img:"images/catalog/p097.jpg", en:"Italy Venice Brown", zh:"意大利威尼斯棕", ar:"بني فينيسيا الإيطالي", slug:"italy-venice-brown"},
+  {c:"yellow", img:"images/catalog/p098.jpg", en:"Turkiye Cave Stone", zh:"土耳其洞石", ar:"حجر الكهوف التركي", slug:"turkiye-cave-stone"},
+  {c:"yellow", img:"images/catalog/p099.jpg", en:"Roman Travertine", zh:"罗马洞石", ar:"حجر الترافرتين الروماني", slug:"roman-travertine"},
+  {c:"gray", img:"images/catalog/p100.jpg", en:"Oreo Grey", zh:"奥利奥灰", ar:"رمادي أوريو", slug:"oreo-grey"},
+  {c:"gray", img:"images/catalog/p101.jpg", en:"Hermes Grey", zh:"爱马仕灰", ar:"رمادي هيرميس", slug:"hermes-grey"},
+  {c:"gray", img:"images/catalog/p102.jpg", en:"Star Vein Blue", zh:"星脉蓝", ar:"عروق النجوم الزرقاء", slug:"star-vein-blue"},
+  {c:"gray", img:"images/catalog/p103.jpg", en:"Fish Maw Gray", zh:"鱼肚灰", ar:"رمادي بطن السمكة", slug:"fish-maw-gray"},
+  {c:"red", img:"images/catalog/p104.jpg", en:"Bulgari Powder", zh:"宝格丽粉", ar:"بودرة بولغاري الوردية", slug:"bulgari-powder"},
+  {c:"red", img:"images/catalog/p105.jpg", en:"Bulgari Purple Turkey", zh:"宝格丽紫·土耳其", ar:"أرجوان بولغاري التركي", slug:"bulgari-purple-turkey"},
+  {c:"red", img:"images/catalog/p106.jpg", en:"Bulgari Purple Italy", zh:"宝格丽紫·意大利", ar:"أرجوان بولغاري الإيطالي", slug:"bulgari-purple-italy"},
+  {c:"red", img:"images/catalog/p107.jpg", en:"Rainbow Rose", zh:"彩虹玫瑰", ar:"وردة قوس قزح", slug:"rainbow-rose"},
+  {c:"red", img:"images/catalog/p108.jpg", en:"Norwegian Red", zh:"挪威红", ar:"أحمر النرويج", slug:"norwegian-red"},
+  {c:"red", img:"images/catalog/p109.jpg", en:"Four Seasons Pink", zh:"四季粉", ar:"وردي الفصول الأربعة", slug:"four-seasons-pink"},
+  {c:"red", img:"images/catalog/p110.jpg", en:"Coral Red", zh:"珊瑚红", ar:"أحمر مرجاني", slug:"coral-red"},
+  {c:"red", img:"images/catalog/p111.jpg", en:"Pink Diamond Pandora", zh:"粉钻潘多拉", ar:"باندورا الماس الوردي", slug:"pink-diamond-pandora"},
+  {c:"red", img:"images/catalog/p112.jpg", en:"Smoke Pink", zh:"烟粉", ar:"وردي دخاني", slug:"smoke-pink"},
+  {c:"red", img:"images/catalog/p113.jpg", en:"Pink Crystal", zh:"粉水晶", ar:"كريستال وردي", slug:"pink-crystal"},
+  {c:"red", img:"images/catalog/p114.jpg", en:"Pink Jade", zh:"粉玉", ar:"يشم وردي", slug:"pink-jade"},
+  {c:"red", img:"images/catalog/p115.jpg", en:"Red Cave Stone", zh:"红洞石", ar:"حجر الكهوف الأحمر", slug:"red-cave-stone"},
+  {c:"red", img:"images/catalog/p116.jpg", en:"Rosso Levanto", zh:"紫罗红", ar:"روسو ليفانتو", slug:"rosso-levanto"}
 ];
-
 var lang = localStorage.getItem('tengmai_lang') || 'en';
 var I18N = {
-  en:{nav_home:"Home",nav_dining:"Dining",nav_coffee:"Coffee",nav_wall:"Walls",nav_island:"Islands",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"7 series · 35 natural stone selections · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_pandora:"Pandora",ask:"Ask Price",pandora_note:"Sample image - request real photos via WhatsApp"},
-  zh:{nav_home:"首页",nav_dining:"餐桌",nav_coffee:"茶几",nav_wall:"背景墙",nav_island:"岛台",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"7大系列 · 35款天然石材 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_pandora:"潘多拉系",ask:"询价",pandora_note:"示例图，真实实拍请WhatsApp索取"},
-  ar:{nav_home:"الرئيسية",nav_dining:"طاولات",nav_coffee:"قهوة",nav_wall:"جدران",nav_island:"جزر",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"7 مجموعات · 35 حجراً طبيعياً · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_pandora:"باندورا",ask:"اسأل عن السعر",pandora_note:"صورة نموذجية - اطلب الصور الحقيقية عبر واتساب"}
+  en:{nav_home:"Home",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"107 natural stone selections · 8 series · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_yellow:"Yellow",tab_red:"Red",tab_gray:"Gray",ask:"Ask Price"},
+  zh:{nav_home:"首页",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"107款天然石材 · 8大系列 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_yellow:"黄色系",tab_red:"红色系",tab_gray:"灰色系",ask:"询价"},
+  ar:{nav_home:"الرئيسية",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"107 حجراً طبيعياً · 8 مجموعات · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_yellow:"أصفر",tab_red:"أحمر",tab_gray:"رمادي",ask:"اسأل عن السعر"}
 };
-
 function render(filter){
   var list = document.getElementById('products');
   var data = filter && filter!=='all' ? PRODUCTS.filter(function(p){return p.c===filter;}) : PRODUCTS;
   var t = I18N[lang];
   list.innerHTML = data.map(function(p){
     var name = p[lang] || p.en;
+    var zhName = p.zh;
     var waText = encodeURIComponent('Hi TENGMAI! I want price for '+p.en);
-    var note = (p.c==='pandora' && t.pandora_note) ? '<div class="pandora-note">'+t.pandora_note+'</div>' : '';
     return '<div class="p-item" onclick="location.href=\''+p.slug+'.html\'">'+
       '<img src="'+p.img+'" alt="'+p.en+'" loading="lazy">'+
-      '<div class="body"><h3><a href="'+p.slug+'.html" onclick="event.stopPropagation()">'+name+'</a></h3><div class="en">'+p.en+'</div>'+note+
+      '<div class="body"><h3><a href="'+p.slug+'.html" onclick="event.stopPropagation()">'+name+'</a></h3><div class="zh-name">'+zhName+'</div><div class="en">'+p.en+'</div>'+
       '<div class="actions"><a href="https://wa.me/601124300699?text='+waText+'" class="wa" onclick="event.stopPropagation()"><i class="fab fa-whatsapp"></i> '+t.ask+'</a></div></div></div>';
   }).join('');
 }
-function openImg(src){ document.getElementById('lbImg').src=src; document.getElementById('lb').style.display='flex'; }
 function toggleMenu(){ document.getElementById('navLinks').classList.toggle('open'); }
 function setLang(l){ lang=l; localStorage.setItem('tengmai_lang',l); applyLang(); render(document.querySelector('.cat-tab.active').dataset.filter); }
 function applyLang(){
