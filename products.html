@@ -102,7 +102,6 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
     <button class="cat-tab" data-filter="chinese" data-i18n="tab_chinese">Chinese</button>
     <button class="cat-tab" data-filter="green" data-i18n="tab_green">Green</button>
     <button class="cat-tab" data-filter="blue" data-i18n="tab_blue">Blue</button>
-    <button class="cat-tab" data-filter="yellow" data-i18n="tab_yellow">Yellow</button>
     <button class="cat-tab" data-filter="pandora" data-i18n="tab_pandora">Pandora</button>
   </div>
 </div>
@@ -163,11 +162,6 @@ var PRODUCTS = [
   {c:"blue", img:"images/products/blue_3.jpg", en:"Blue Jade Onyx", zh:"蓝玉髓", ar:"أونيكس أزرق", slug:"blue-jade-onyx"},
   {c:"blue", img:"images/products/blue_4.jpg", en:"Dream Blue Gem", zh:"梦幻蓝宝", ar:"جوهرة زرقاء حلم", slug:"dream-blue-gem"},
   // Yellow
-  {c:"yellow", img:"images/products/yellow_0.jpg", en:"Golden Vein", zh:"金纹黄", ar:"عروق ذهبية", slug:"golden-vein"},
-  {c:"yellow", img:"images/products/yellow_1.jpg", en:"Sunset Yellow", zh:"日落黄", ar:"أصفر الغروب", slug:"sunset-yellow"},
-  {c:"yellow", img:"images/products/yellow_2.jpg", en:"Golden Sand", zh:"金沙黄", ar:"رمل ذهبي", slug:"golden-sand"},
-  {c:"yellow", img:"images/products/yellow_3.jpg", en:"Amber Glow", zh:"琥珀光", ar:"توهج كهرماني", slug:"amber-glow"},
-  {c:"yellow", img:"images/products/yellow_4.jpg", en:"Honey Stone", zh:"蜜糖石", ar:"حجر العسل", slug:"honey-stone"},
   // Pandora
   {c:"pandora", img:"images/products/yellow_0.jpg", en:"Old Mine Pandora", zh:"老矿潘多拉", ar:"باندورا القديمة", slug:"old-mine-pandora"},
   {c:"pandora", img:"images/products/yellow_1.jpg", en:"Large Crystal Pandora", zh:"大水晶潘多拉", ar:"باندورا الكريستالية", slug:"large-crystal-pandora"},
@@ -178,9 +172,9 @@ var PRODUCTS = [
 
 var lang = localStorage.getItem('tengmai_lang') || 'en';
 var I18N = {
-  en:{nav_home:"Home",nav_dining:"Dining",nav_coffee:"Coffee",nav_wall:"Walls",nav_island:"Islands",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"7 series · 35 natural stone selections · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_yellow:"Yellow",tab_pandora:"Pandora",ask:"Ask Price",pandora_note:"Sample image - request real photos via WhatsApp"},
-  zh:{nav_home:"首页",nav_dining:"餐桌",nav_coffee:"茶几",nav_wall:"背景墙",nav_island:"岛台",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"7大系列 · 35款天然石材 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_yellow:"黄色系",tab_pandora:"潘多拉系",ask:"询价",pandora_note:"示例图，真实实拍请WhatsApp索取"},
-  ar:{nav_home:"الرئيسية",nav_dining:"طاولات",nav_coffee:"قهوة",nav_wall:"جدران",nav_island:"جزر",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"7 مجموعات · 35 حجراً طبيعياً · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_yellow:"أصفر",tab_pandora:"باندورا",ask:"اسأل عن السعر",pandora_note:"صورة نموذجية - اطلب الصور الحقيقية عبر واتساب"}
+  en:{nav_home:"Home",nav_dining:"Dining",nav_coffee:"Coffee",nav_wall:"Walls",nav_island:"Islands",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"7 series · 35 natural stone selections · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_pandora:"Pandora",ask:"Ask Price",pandora_note:"Sample image - request real photos via WhatsApp"},
+  zh:{nav_home:"首页",nav_dining:"餐桌",nav_coffee:"茶几",nav_wall:"背景墙",nav_island:"岛台",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"7大系列 · 35款天然石材 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_pandora:"潘多拉系",ask:"询价",pandora_note:"示例图，真实实拍请WhatsApp索取"},
+  ar:{nav_home:"الرئيسية",nav_dining:"طاولات",nav_coffee:"قهوة",nav_wall:"جدران",nav_island:"جزر",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"7 مجموعات · 35 حجراً طبيعياً · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_pandora:"باندورا",ask:"اسأل عن السعر",pandora_note:"صورة نموذجية - اطلب الصور الحقيقية عبر واتساب"}
 };
 
 function render(filter){
