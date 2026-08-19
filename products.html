@@ -6,6 +6,16 @@
 <title>Product Catalog - TENGMAI Luxury Stone Furniture</title>
 <meta name="description" content="Browse TENGMAI luxury stone catalog: Dining tables, coffee tables, feature walls, islands. White, black, green, blue, Pandora series. Factory direct from Foshan, China.">
 <meta name="keywords" content="luxury stone, marble catalog, stone table, natural stone, Foshan factory, Pandora stone, marble dining table">
+<link rel="canonical" href="https://wangbarrte-code.github.io/tengmai/products.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "TENGMAI Luxury Stone Catalog",
+  "url": "https://wangbarrte-code.github.io/tengmai/products.html",
+  "description": "35 natural stone selections across 7 series — white, black, Chinese, green, blue, yellow and Pandora. Factory direct from Foshan, China."
+}
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -38,6 +48,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
 .p-item img{width:100%;height:170px;object-fit:cover;background:#eee;}
 .p-item .body{padding:14px;}
 .p-item h3{font-size:15px;margin-bottom:4px;}
+.p-item h3 a{color:inherit;text-decoration:none;}
 .p-item .en{font-size:11px;color:#999;}
 .p-item .actions{display:flex;gap:8px;margin-top:10px;}
 .p-item .wa{flex:1;background:#25d366;color:#fff;text-decoration:none;text-align:center;padding:8px;border-radius:18px;font-size:11px;font-weight:700;}
@@ -122,47 +133,47 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
 /* ===== Products data (7 series × 5 = 35) ===== */
 var PRODUCTS = [
   // White
-  {c:"white", img:"images/products/white_0.jpg", en:"Fine Flower White", zh:"细花白", ar:"زهرة بيضاء ناعمة"},
-  {c:"white", img:"images/products/white_1.jpg", en:"Middle Flower White", zh:"中花白", ar:"زهرة بيضاء متوسطة"},
-  {c:"white", img:"images/products/white_2.jpg", en:"Big Flower White", zh:"大花白", ar:"زهرة بيضاء كبيرة"},
-  {c:"white", img:"images/products/white_3.jpg", en:"Jazz White", zh:"爵士白", ar:"أبيض جاز"},
-  {c:"white", img:"images/products/white_4.jpg", en:"Elegant White", zh:"雅士白", ar:"أبيض أنيق"},
+  {c:"white", img:"images/products/white_0.jpg", en:"Fine Flower White", zh:"细花白", ar:"زهرة بيضاء ناعمة", slug:"fine-flower-white"},
+  {c:"white", img:"images/products/white_1.jpg", en:"Middle Flower White", zh:"中花白", ar:"زهرة بيضاء متوسطة", slug:"middle-flower-white"},
+  {c:"white", img:"images/products/white_2.jpg", en:"Big Flower White", zh:"大花白", ar:"زهرة بيضاء كبيرة", slug:"big-flower-white"},
+  {c:"white", img:"images/products/white_3.jpg", en:"Jazz White", zh:"爵士白", ar:"أبيض جاز", slug:"jazz-white"},
+  {c:"white", img:"images/products/white_4.jpg", en:"Elegant White", zh:"雅士白", ar:"أبيض أنيق", slug:"elegant-white"},
   // Black
-  {c:"black", img:"images/products/black_0.jpg", en:"Laurent Black", zh:"劳伦黑金", ar:"أسود لوران"},
-  {c:"black", img:"images/products/black_1.jpg", en:"Black White Root", zh:"黑白根", ar:"أسود بجذور بيضاء"},
-  {c:"black", img:"images/products/black_2.jpg", en:"Ancient Wood Grain", zh:"古木纹", ar:"خشب قديم"},
-  {c:"black", img:"images/products/black_3.jpg", en:"Black Rose", zh:"黑玫瑰", ar:"وردة سوداء"},
-  {c:"black", img:"images/products/black_4.jpg", en:"Silver White Dragon", zh:"银白龙", ar:"تنين أبيض فضي"},
+  {c:"black", img:"images/products/black_0.jpg", en:"Laurent Black", zh:"劳伦黑金", ar:"أسود لوران", slug:"laurent-black"},
+  {c:"black", img:"images/products/black_1.jpg", en:"Black White Root", zh:"黑白根", ar:"أسود بجذور بيضاء", slug:"black-white-root"},
+  {c:"black", img:"images/products/black_2.jpg", en:"Ancient Wood Grain", zh:"古木纹", ar:"خشب قديم", slug:"ancient-wood-grain"},
+  {c:"black", img:"images/products/black_3.jpg", en:"Black Rose", zh:"黑玫瑰", ar:"وردة سوداء", slug:"black-rose"},
+  {c:"black", img:"images/products/black_4.jpg", en:"Silver White Dragon", zh:"银白龙", ar:"تنين أبيض فضي", slug:"silver-white-dragon"},
   // Chinese
-  {c:"chinese", img:"images/products/chinese_0.jpg", en:"Fragrant Snow Plum", zh:"香雪梅", ar:"برقوق الثلج"},
-  {c:"chinese", img:"images/products/chinese_1.jpg", en:"Cold River Snow", zh:"寒江雪", ar:"ثلج النهر البارد"},
-  {c:"chinese", img:"images/products/chinese_2.jpg", en:"Snow Mountain Orchid", zh:"雪山兰", ar:"سحلبية الجبل"},
-  {c:"chinese", img:"images/products/chinese_3.jpg", en:"Snow Mountain Flying Fox", zh:"雪山飞狐", ar:"ثعلب الثلج الطائر"},
-  {c:"chinese", img:"images/products/chinese_4.jpg", en:"Tianshan Twilight Snow", zh:"天山暮雪", ar:"ثلج تيانشان"},
+  {c:"chinese", img:"images/products/chinese_0.jpg", en:"Fragrant Snow Plum", zh:"香雪梅", ar:"برقوق الثلج", slug:"fragrant-snow-plum"},
+  {c:"chinese", img:"images/products/chinese_1.jpg", en:"Cold River Snow", zh:"寒江雪", ar:"ثلج النهر البارد", slug:"cold-river-snow"},
+  {c:"chinese", img:"images/products/chinese_2.jpg", en:"Snow Mountain Orchid", zh:"雪山兰", ar:"سحلبية الجبل", slug:"snow-mountain-orchid"},
+  {c:"chinese", img:"images/products/chinese_3.jpg", en:"Snow Mountain Flying Fox", zh:"雪山飞狐", ar:"ثعلب الثلج الطائر", slug:"snow-mountain-flying-fox"},
+  {c:"chinese", img:"images/products/chinese_4.jpg", en:"Tianshan Twilight Snow", zh:"天山暮雪", ar:"ثلج تيانشان", slug:"tianshan-twilight-snow"},
   // Green
-  {c:"green", img:"images/products/green_0.jpg", en:"Amazon Green", zh:"亚马逊绿", ar:"أمازون أخضر"},
-  {c:"green", img:"images/products/green_1.jpg", en:"Cold Jade", zh:"冷翡翠", ar:"يشم بارد"},
-  {c:"green", img:"images/products/green_2.jpg", en:"Ancestral Green", zh:"祖传绿", ar:"أخضر تراثي"},
-  {c:"green", img:"images/products/green_3.jpg", en:"Patek Jade Green", zh:"百达翡丽绿", ar:"باتيك جاد أخضر"},
-  {c:"green", img:"images/products/green_4.jpg", en:"Prada Green", zh:"普拉达绿", ar:"برادا أخضر"},
+  {c:"green", img:"images/products/green_0.jpg", en:"Amazon Green", zh:"亚马逊绿", ar:"أمازون أخضر", slug:"amazon-green"},
+  {c:"green", img:"images/products/green_1.jpg", en:"Cold Jade", zh:"冷翡翠", ar:"يشم بارد", slug:"cold-jade"},
+  {c:"green", img:"images/products/green_2.jpg", en:"Ancestral Green", zh:"祖传绿", ar:"أخضر تراثي", slug:"ancestral-green"},
+  {c:"green", img:"images/products/green_3.jpg", en:"Patek Jade Green", zh:"百达翡丽绿", ar:"باتيك جاد أخضر", slug:"patek-jade-green"},
+  {c:"green", img:"images/products/green_4.jpg", en:"Prada Green", zh:"普拉达绿", ar:"برادا أخضر", slug:"prada-green"},
   // Blue
-  {c:"blue", img:"images/products/blue_0.jpg", en:"Blue Jade", zh:"蓝翡翠", ar:"يشم أزرق"},
-  {c:"blue", img:"images/products/blue_1.jpg", en:"Blue Crystal", zh:"蓝水晶", ar:"كريستال أزرق"},
-  {c:"blue", img:"images/products/blue_2.jpg", en:"Blue Gold Sand", zh:"蓝金沙", ar:"رمال ذهبية زرقاء"},
-  {c:"blue", img:"images/products/blue_3.jpg", en:"Blue Jade Onyx", zh:"蓝玉髓", ar:"أونيكس أزرق"},
-  {c:"blue", img:"images/products/blue_4.jpg", en:"Dream Blue Gem", zh:"梦幻蓝宝", ar:"جوهرة زرقاء حلم"},
+  {c:"blue", img:"images/products/blue_0.jpg", en:"Blue Jade", zh:"蓝翡翠", ar:"يشم أزرق", slug:"blue-jade"},
+  {c:"blue", img:"images/products/blue_1.jpg", en:"Blue Crystal", zh:"蓝水晶", ar:"كريستال أزرق", slug:"blue-crystal"},
+  {c:"blue", img:"images/products/blue_2.jpg", en:"Blue Gold Sand", zh:"蓝金沙", ar:"رمال ذهبية زرقاء", slug:"blue-gold-sand"},
+  {c:"blue", img:"images/products/blue_3.jpg", en:"Blue Jade Onyx", zh:"蓝玉髓", ar:"أونيكس أزرق", slug:"blue-jade-onyx"},
+  {c:"blue", img:"images/products/blue_4.jpg", en:"Dream Blue Gem", zh:"梦幻蓝宝", ar:"جوهرة زرقاء حلم", slug:"dream-blue-gem"},
   // Yellow
-  {c:"yellow", img:"images/products/yellow_0.jpg", en:"Golden Vein", zh:"金纹黄", ar:"عروق ذهبية"},
-  {c:"yellow", img:"images/products/yellow_1.jpg", en:"Sunset Yellow", zh:"日落黄", ar:"أصفر الغروب"},
-  {c:"yellow", img:"images/products/yellow_2.jpg", en:"Golden Sand", zh:"金沙黄", ar:"رمل ذهبي"},
-  {c:"yellow", img:"images/products/yellow_3.jpg", en:"Amber Glow", zh:"琥珀光", ar:"توهج كهرماني"},
-  {c:"yellow", img:"images/products/yellow_4.jpg", en:"Honey Stone", zh:"蜜糖石", ar:"حجر العسل"},
+  {c:"yellow", img:"images/products/yellow_0.jpg", en:"Golden Vein", zh:"金纹黄", ar:"عروق ذهبية", slug:"golden-vein"},
+  {c:"yellow", img:"images/products/yellow_1.jpg", en:"Sunset Yellow", zh:"日落黄", ar:"أصفر الغروب", slug:"sunset-yellow"},
+  {c:"yellow", img:"images/products/yellow_2.jpg", en:"Golden Sand", zh:"金沙黄", ar:"رمل ذهبي", slug:"golden-sand"},
+  {c:"yellow", img:"images/products/yellow_3.jpg", en:"Amber Glow", zh:"琥珀光", ar:"توهج كهرماني", slug:"amber-glow"},
+  {c:"yellow", img:"images/products/yellow_4.jpg", en:"Honey Stone", zh:"蜜糖石", ar:"حجر العسل", slug:"honey-stone"},
   // Pandora
-  {c:"pandora", img:"images/products/yellow_0.jpg", en:"Old Mine Pandora", zh:"老矿潘多拉", ar:"باندورا القديمة"},
-  {c:"pandora", img:"images/products/yellow_1.jpg", en:"Large Crystal Pandora", zh:"大水晶潘多拉", ar:"باندورا الكريستالية"},
-  {c:"pandora", img:"images/products/yellow_2.jpg", en:"White Base Pandora", zh:"白底潘多拉", ar:"باندورا بيضاء"},
-  {c:"pandora", img:"images/products/yellow_3.jpg", en:"Blue Diamond Pandora", zh:"蓝钻潘多拉", ar:"باندورا الماس الأزرق"},
-  {c:"pandora", img:"images/products/yellow_4.jpg", en:"Green Diamond Pandora", zh:"绿钻潘多拉", ar:"باندورا الماس الأخضر"}
+  {c:"pandora", img:"images/products/yellow_0.jpg", en:"Old Mine Pandora", zh:"老矿潘多拉", ar:"باندورا القديمة", slug:"old-mine-pandora"},
+  {c:"pandora", img:"images/products/yellow_1.jpg", en:"Large Crystal Pandora", zh:"大水晶潘多拉", ar:"باندورا الكريستالية", slug:"large-crystal-pandora"},
+  {c:"pandora", img:"images/products/yellow_2.jpg", en:"White Base Pandora", zh:"白底潘多拉", ar:"باندورا بيضاء", slug:"white-base-pandora"},
+  {c:"pandora", img:"images/products/yellow_3.jpg", en:"Blue Diamond Pandora", zh:"蓝钻潘多拉", ar:"باندورا الماس الأزرق", slug:"blue-diamond-pandora"},
+  {c:"pandora", img:"images/products/yellow_4.jpg", en:"Green Diamond Pandora", zh:"绿钻潘多拉", ar:"باندورا الماس الأخضر", slug:"green-diamond-pandora"}
 ];
 
 var lang = localStorage.getItem('tengmai_lang') || 'en';
@@ -180,9 +191,9 @@ function render(filter){
     var name = p[lang] || p.en;
     var waText = encodeURIComponent('Hi TENGMAI! I want price for '+p.en);
     var note = (p.c==='pandora' && t.pandora_note) ? '<div class="pandora-note">'+t.pandora_note+'</div>' : '';
-    return '<div class="p-item" onclick="openImg(\''+p.img+'\')">'+
+    return '<div class="p-item" onclick="location.href=\''+p.slug+'.html\'">'+
       '<img src="'+p.img+'" alt="'+p.en+'" loading="lazy">'+
-      '<div class="body"><h3>'+name+'</h3><div class="en">'+p.en+'</div>'+note+
+      '<div class="body"><h3><a href="'+p.slug+'.html" onclick="event.stopPropagation()">'+name+'</a></h3><div class="en">'+p.en+'</div>'+note+
       '<div class="actions"><a href="https://wa.me/601124300699?text='+waText+'" class="wa" onclick="event.stopPropagation()"><i class="fab fa-whatsapp"></i> '+t.ask+'</a></div></div></div>';
   }).join('');
 }
