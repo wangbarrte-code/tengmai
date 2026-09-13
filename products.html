@@ -69,6 +69,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,s
     <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
     <div class="nav-links" id="navLinks">
       <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="furniture.html" data-i18n="nav_furn">Furniture</a>
       <div class="lang-switch">
         <button onclick="setLang('en')" id="btn-en" class="active">EN</button>
         <button onclick="setLang('zh')" id="btn-zh">中</button>
@@ -208,9 +209,9 @@ var PRODUCTS = [
 ];
 var lang = localStorage.getItem('tengmai_lang') || 'en';
 var I18N = {
-  en:{nav_home:"Home",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"107 natural stone selections · 8 series · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_yellow:"Yellow",tab_red:"Red",tab_gray:"Gray",ask:"Ask Price"},
-  zh:{nav_home:"首页",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"107款天然石材 · 8大系列 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_yellow:"黄色系",tab_red:"红色系",tab_gray:"灰色系",ask:"询价"},
-  ar:{nav_home:"الرئيسية",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"107 حجراً طبيعياً · 8 مجموعات · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_yellow:"أصفر",tab_red:"أحمر",tab_gray:"رمادي",ask:"اسأل عن السعر"}
+  en:{nav_home:"Home",nav_furn:"Furniture",nav_wa:"WhatsApp",h1:"Luxury Stone Catalog",sub:"107 natural stone selections · 8 series · Factory direct",tab_all:"All",tab_white:"White",tab_black:"Black",tab_chinese:"Chinese",tab_green:"Green",tab_blue:"Blue",tab_yellow:"Yellow",tab_red:"Red",tab_gray:"Gray",ask:"Ask Price"},
+  zh:{nav_home:"首页",nav_furn:"成品家具",nav_wa:"WhatsApp",h1:"奢石产品目录",sub:"107款天然石材 · 8大系列 · 工厂直供",tab_all:"全部",tab_white:"白色系",tab_black:"黑色系",tab_chinese:"中式系",tab_green:"绿色系",tab_blue:"蓝色系",tab_yellow:"黄色系",tab_red:"红色系",tab_gray:"灰色系",ask:"询价"},
+  ar:{nav_home:"الرئيسية",nav_furn:"الأثاث",nav_wa:"واتساب",h1:"كتالوج الحجر الفاخر",sub:"107 حجراً طبيعياً · 8 مجموعات · مباشرة من المصنع",tab_all:"الكل",tab_white:"أبيض",tab_black:"أسود",tab_chinese:"صيني",tab_green:"أخضر",tab_blue:"أزرق",tab_yellow:"أصفر",tab_red:"أحمر",tab_gray:"رمادي",ask:"اسأل عن السعر"}
 };
 function render(filter){
   var list = document.getElementById('products');

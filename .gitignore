@@ -1,3 +1,6 @@
 .DS_Store
 *.pdf
 错误标签/
+
+# megastudio 抓取原始数据（本地留档，不入库）
+_megastudio_raw/

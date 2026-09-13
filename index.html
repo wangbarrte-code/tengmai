@@ -192,7 +192,8 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
     <a href="#" class="logo">TENGMAI<span>®</span></a>
     <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
     <div class="nav-links" id="navLinks">
-      <a href="#products" data-i18n="nav_products">Products</a>
+      <a href="products.html" data-i18n="nav_stone">Stone Catalog</a>
+      <a href="furniture.html" data-i18n="nav_furn">Furniture</a>
       <a href="#factory" data-i18n="nav_factory">Factory</a>
       <a href="#why" data-i18n="nav_why">Why Us</a>
       <a href="#contact" data-i18n="nav_contact">Contact</a>
@@ -239,21 +240,29 @@ body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial
   <h2 data-i18n="cat_h2">Luxury Stone Furniture</h2>
   <p class="sub" data-i18n="cat_sub">Explore our ranges — each piece crafted from a single natural stone slab</p>
   <div class="categories">
-    <a href="products.html#dining" class="cat-card">
-      <img src="images/products/white_0.jpg" alt="Dining Tables">
-      <div class="overlay"><h3 data-i18n="cat_dining">Dining Tables</h3><p data-i18n="cat_dining_s">Marble dining tables & round tops</p><span class="view" data-i18n="cat_view">View →</span></div>
+    <a href="products.html" class="cat-card">
+      <img src="images/catalog/p079.jpg" alt="Natural Stone Catalog">
+      <div class="overlay"><h3 data-i18n="cat_stone">Stone Catalog</h3><p data-i18n="cat_stone_s">107 natural stone selections · 8 series</p><span class="view" data-i18n="cat_view">View →</span></div>
     </a>
-    <a href="products.html#coffee" class="cat-card">
-      <img src="images/products/black_0.jpg" alt="Coffee Tables">
-      <div class="overlay"><h3 data-i18n="cat_coffee">Coffee Tables</h3><p data-i18n="cat_coffee_s">Exotic stone coffee & side tables</p><span class="view" data-i18n="cat_view">View →</span></div>
+    <a href="furniture.html#dining-table" class="cat-card">
+      <img src="images/furniture/kunlun-green-marble-dining-table-1.webp" alt="Dining Tables">
+      <div class="overlay"><h3 data-i18n="cat_dining">Dining Tables</h3><p data-i18n="cat_dining_s">Marble dining tables &amp; round tops</p><span class="view" data-i18n="cat_view">View →</span></div>
     </a>
-    <a href="products.html#feature" class="cat-card">
-      <img src="images/gallery/slab_0.jpg" alt="Feature Walls">
-      <div class="overlay"><h3 data-i18n="cat_wall">Feature Walls</h3><p data-i18n="cat_wall_s">Bookmatch slabs for walls & islands</p><span class="view" data-i18n="cat_view">View →</span></div>
+    <a href="furniture.html#coffee-table" class="cat-card">
+      <img src="images/furniture/monet-garden-marble-coffee-table-1.webp" alt="Coffee Tables">
+      <div class="overlay"><h3 data-i18n="cat_coffee">Coffee Tables</h3><p data-i18n="cat_coffee_s">Marble coffee &amp; side tables</p><span class="view" data-i18n="cat_view">View →</span></div>
     </a>
-    <a href="products.html#island" class="cat-card">
-      <img src="images/products/green_0.jpg" alt="Islands & Bars">
-      <div class="overlay"><h3 data-i18n="cat_island">Islands & Bars</h3><p data-i18n="cat_island_s">Kitchen islands, bars & consoles</p><span class="view" data-i18n="cat_view">View →</span></div>
+    <a href="furniture.html#console-table" class="cat-card">
+      <img src="images/furniture/avocado-green-marble-console-table-1.webp" alt="Console Tables">
+      <div class="overlay"><h3 data-i18n="cat_console">Console Tables</h3><p data-i18n="cat_console_s">Marble consoles &amp; side tables</p><span class="view" data-i18n="cat_view">View →</span></div>
+    </a>
+    <a href="furniture.html#hardware" class="cat-card">
+      <img src="images/furniture/petal-mirror-metal-base-1.webp" alt="Hardware">
+      <div class="overlay"><h3 data-i18n="cat_hw">Hardware</h3><p data-i18n="cat_hw_s">Stainless steel table bases</p><span class="view" data-i18n="cat_view">View →</span></div>
+    </a>
+    <a href="furniture.html#stone-slab" class="cat-card">
+      <img src="images/furniture/pandora-marble-slab-1.webp" alt="Stone Slabs">
+      <div class="overlay"><h3 data-i18n="cat_slab">Stone Slabs</h3><p data-i18n="cat_slab_s">Natural stone slabs &amp; tops</p><span class="view" data-i18n="cat_view">View →</span></div>
     </a>
   </div>
 </section>
@@ -362,14 +371,16 @@ function submitQuote(e){
 /* ===== i18n (EN/ZH/AR) ===== */
 var I18N = {
   en: {
-    nav_products:"Products", nav_factory:"Factory", nav_why:"Why Us", nav_contact:"Contact", nav_wa:"WhatsApp",
+    nav_products:"Products", nav_stone:"Stone Catalog", nav_furn:"Furniture", nav_factory:"Factory", nav_why:"Why Us", nav_contact:"Contact", nav_wa:"WhatsApp",
     hero_kicker:"Foshan Factory Direct", hero_h1:"Nature's Artwork,", hero_h1_2:"Crafted in Stone",
     hero_p:"Luxury natural stone furniture from our 30-year factory in Foshan, China. Every piece carries unique natural veining — factory direct, save 30-50% vs showrooms.",
     hero_btn1:"Explore Collection", hero_btn2:"Get Price", hero_img_tag:"Explore Blue Jade",
     stat1:"Years Factory", stat3:"Savings", stat4:"Stone Colors",
     cat_tag:"Our Collection", cat_h2:"Luxury Stone Furniture", cat_sub:"Explore our ranges — each piece crafted from a single natural stone slab",
-    cat_dining:"Dining Tables", cat_dining_s:"Marble dining tables & round tops", cat_coffee:"Coffee Tables", cat_coffee_s:"Exotic stone coffee & side tables",
-    cat_wall:"Feature Walls", cat_wall_s:"Bookmatch slabs for walls & islands", cat_island:"Islands & Bars", cat_island_s:"Kitchen islands, bars & consoles", cat_view:"View →",
+    cat_stone:"Stone Catalog", cat_stone_s:"107 natural stone selections · 8 series",
+    cat_dining:"Dining Tables", cat_dining_s:"Marble dining tables & round tops", cat_coffee:"Coffee Tables", cat_coffee_s:"Marble coffee & side tables",
+    cat_console:"Console Tables", cat_console_s:"Marble consoles & side tables", cat_hw:"Hardware", cat_hw_s:"Stainless steel table bases",
+    cat_slab:"Stone Slabs", cat_slab_s:"Natural stone slabs & tops", cat_view:"View →",
     feat_tag:"Featured", feat_h2:"Signature Pieces", feat_sub:"Our most requested natural stone selections",
     feat_1:"Creamy white with elegant grey veining", feat_2:"Deep black with dramatic white veins", feat_3:"Rich green with golden mineral veins", feat_4:"Rare blue stone with striking natural veining", feat_wa:"Ask Price",
     why_tag:"Why TENGMAI", why_h2:"The Source Factory Advantage", why_sub:"Why importers, dealers & designers choose us",
@@ -381,14 +392,16 @@ var I18N = {
     opt1:"Dining Table", opt2:"Coffee Table", opt3:"Slab / Feature Wall", opt4:"Custom Piece", cta_submit:"Get My Quote in 24h"
   },
   zh: {
-    nav_products:"产品", nav_factory:"工厂", nav_why:"为什么选我们", nav_contact:"联系", nav_wa:"WhatsApp",
+    nav_products:"产品", nav_stone:"石材目录", nav_furn:"成品家具", nav_factory:"工厂", nav_why:"为什么选我们", nav_contact:"联系", nav_wa:"WhatsApp",
     hero_kicker:"佛山源头工厂直供", hero_h1:"大自然的艺术品", hero_h1_2:"匠心打造于石",
     hero_p:"佛山30年工厂，天然奢石家具。每一件都拥有独特纹理——源头直供，比商场省30-50%。",
     hero_btn1:"浏览产品", hero_btn2:"获取报价", hero_img_tag:"查看蓝翡翠系列",
     stat1:"年工厂", stat3:"节省", stat4:"种花色",
     cat_tag:"我们的产品", cat_h2:"奢石家具", cat_sub:"探索我们的系列——每一件都来自一整块天然石材",
-    cat_dining:"餐桌", cat_dining_s:"大理石餐桌及圆台面", cat_coffee:"茶几", cat_coffee_s:"异域奢石茶几边几",
-    cat_wall:"背景墙", cat_wall_s:"书对纹大板背景墙", cat_island:"岛台吧台", cat_island_s:"厨房岛台、吧台、玄关柜", cat_view:"查看 →",
+    cat_stone:"石材目录", cat_stone_s:"107款天然石材 · 8大色系",
+    cat_dining:"餐桌", cat_dining_s:"天然大理石餐桌及圆台面", cat_coffee:"茶几", cat_coffee_s:"大理石茶几与边几",
+    cat_console:"玄关/边几", cat_console_s:"大理石玄关柜与边几", cat_hw:"五金配件", cat_hw_s:"不锈钢桌架与五金脚",
+    cat_slab:"桌面石材", cat_slab_s:"天然石材大板与台面", cat_view:"查看 →",
     feat_tag:"精选", feat_h2:"招牌作品", feat_sub:"广受欢迎的天然石材选择",
     feat_1:"奶油白底优雅灰纹", feat_2:"深黑底戏剧性白纹", feat_3:"翠绿底金色矿脉", feat_4:"稀有蓝石，纹理夺目", feat_wa:"询价",
     why_tag:"为什么选腾脉", why_h2:"源头工厂的优势", why_sub:"进口商、经销商和设计师选择我们的原因",
@@ -400,14 +413,16 @@ var I18N = {
     opt1:"餐桌", opt2:"茶几", opt3:"大板/背景墙", opt4:"定制", cta_submit:"24小时内获取报价"
   },
   ar: {
-    nav_products:"المنتجات", nav_factory:"المصنع", nav_why:"لماذا نحن", nav_contact:"اتصل", nav_wa:"واتساب",
+    nav_products:"المنتجات", nav_stone:"كتالوج الحجر", nav_furn:"الأثاث", nav_factory:"المصنع", nav_why:"لماذا نحن", nav_contact:"اتصل", nav_wa:"واتساب",
     hero_kicker:"مصنع فوشان مباشرة", hero_h1:"تحفة الطبيعة،", hero_h1_2:"مصنوعة من الحجر",
     hero_p:"أثاث حجر فاخر من مصنعنا في فوشان بالصين منذ 30 عاماً. كل قطعة بعروق طبيعية فريدة — مباشرة من المصنع، وفّر 30-50%.",
     hero_btn1:"استكشف المجموعة", hero_btn2:"احصل على السعر", hero_img_tag:"استكشف اليشم الأزرق",
     stat1:"سنة خبرة", stat3:"توفير", stat4:"لون حجر",
     cat_tag:"مجموعتنا", cat_h2:"أثاث الحجر الفاخر", cat_sub:"استكشف مجموعاتنا — كل قطعة مصنوعة من لوح حجر طبيعي واحد",
-    cat_dining:"طاولات الطعام", cat_dining_s:"طاولات رخام وقطع دائرية", cat_coffee:"طاولات القهوة", cat_coffee_s:"طاولات حجرية فاخرة",
-    cat_wall:"جدران الديكور", cat_wall_s:"ألواح حجرية للجدران", cat_island:"جزر ومقاهي", cat_island_s:"جزر المطبخ والبارات", cat_view:"عرض ←",
+    cat_stone:"كتالوج الحجر", cat_stone_s:"107 حجراً طبيعياً · 8 مجموعات",
+    cat_dining:"طاولات الطعام", cat_dining_s:"طاولات رخام وقطع دائرية", cat_coffee:"طاولات القهوة", cat_coffee_s:"طاولات قهوة وجانبية رخامية",
+    cat_console:"طاولات المدخل", cat_console_s:"طاولات مدخل وجانبية رخامية", cat_hw:"ملحقات معدنية", cat_hw_s:"قواعد طاولات من الفولاذ",
+    cat_slab:"ألواح الحجر", cat_slab_s:"ألواح وأسطح حجرية طبيعية", cat_view:"عرض ←",
     feat_tag:"مميز", feat_h2:"قطع مميزة", feat_sub:"أكثر اختياراتنا طلباً من الحجر الطبيعي",
     feat_1:"أبيض كريمي مع عروق رمادية", feat_2:"أسود عميق مع عروق بيضاء", feat_3:"أخضر غني مع عروق ذهبية", feat_4:"حجر أزرق نادر فريد", feat_wa:"اسأل عن السعر",
     why_tag:"لماذا تينغماي", why_h2:"ميزة المصنع", why_sub:"لماذا يختارنا المستوردون والتجار",
